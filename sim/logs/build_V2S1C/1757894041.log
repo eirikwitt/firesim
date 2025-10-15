@@ -1,0 +1,396 @@
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:01] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:54:24] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32] ****** Vivado v2022.2 (64-bit)
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] 
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] source ./scripts/main.tcl
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # set root_dir [pwd]
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] # set vivado_version [version -short]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] # proc retrieveVersionedFile {filename version} {
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #   set first [file rootname $filename]
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   set last [file extension $filename]
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-15 01:55:32] #     return ${first}_${version}${last}
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] #   }
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #   return $filename
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-15 01:55:32] #     puts "ERROR: could not find $sourceFile"
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] #     exit 1
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] # source $sourceFile
+[2025-09-15 01:55:32] ## set jobs 12
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] ## set part xcu250-figd2104-2L-e
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] #     if {[file exists ${path}]} {
+[2025-09-15 01:55:32] #         file delete -force -- ${path}
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.xpr'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.xpr'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] #     }
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] # }
+[2025-09-15 01:55:32] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] ERROR: [Project 1-161] Failed to remove the directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs'. The directory might be in use by some other process.
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:32] INFO: [Common 17-206] Exiting Vivado at Mon Sep 15 01:55:32 2025...
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1
+[2025-09-15 01:55:33] make: *** [target-agnostic.mk:346: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.bit] Error 1

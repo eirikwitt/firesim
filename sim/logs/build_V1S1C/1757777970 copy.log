@@ -1,0 +1,6 @@
+[2025-09-13 17:39:30] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-13 17:40:12] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV1S1C0L3-BaseF1Config1Mem_F25MHz
+[2025-09-13 17:40:12] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard && java -jar /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/rocket-chip/sbt-launch.jar  ";project firechip; runMain chipyard.Generator  --target-dir /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV1S1C0L3-BaseF1Config1Mem_F25MHz --name firesim.firesim.FireSim.FireSimV1S1C0L3 --top-module firesim.firesim.FireSim --legacy-configs firesim.firesim:FireSimV1S1C0L3"
+[2025-09-13 17:40:13] Picked up JAVA_TOOL_OPTIONS: -Xmx128G -Xss8M -Djava.io.tmpdir=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.java_tmp
+[2025-09-13 17:40:15] Waiting for lock on /cluster/home/eirikwit/.sbt/boot/sbt.boot.lock to be available...
+[2025-09-13 17:40:19] make: *** [/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/makefrag/firesim/Makefrag:47: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV1S1C0L3-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV1S1C0L3.fir] Error 2

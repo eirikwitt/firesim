@@ -1,0 +1,2 @@
+[2025-09-14 05:16:20] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-14 05:16:34] make: Nothing to be done for 'fpga'.
