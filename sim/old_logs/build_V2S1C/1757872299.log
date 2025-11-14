@@ -1,0 +1,766 @@
+[2025-09-14 19:51:39] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-14 19:51:48] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz
+[2025-09-14 19:51:48] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard && java -jar /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/rocket-chip/sbt-launch.jar  ";project firechip; runMain chipyard.Generator  --target-dir /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz --name firesim.firesim.FireSim.FireSimV2S1C --top-module firesim.firesim.FireSim --legacy-configs firesim.firesim:FireSimV2S1C"
+[2025-09-14 19:51:48] Picked up JAVA_TOOL_OPTIONS: -Xmx128G -Xss8M -Djava.io.tmpdir=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.java_tmp
+[2025-09-14 19:51:49] WARNING: A terminally deprecated method in java.lang.System has been called
+[2025-09-14 19:51:49] WARNING: System::setSecurityManager has been called by sbt.TrapExit$ (file:/cluster/home/eirikwit/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/run_2.12-1.5.5.jar)
+[2025-09-14 19:51:49] WARNING: Please consider reporting this to the maintainers of sbt.TrapExit$
+[2025-09-14 19:51:49] WARNING: System::setSecurityManager will be removed in a future release
+[2025-09-14 19:51:49] [info] welcome to sbt 1.5.5 (N/A Java 17.0.3-internal)
+[2025-09-14 19:51:50] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project/project
+[2025-09-14 19:51:51] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project
+[2025-09-14 19:51:51] [info] loading settings for project chipyard-build from plugins.sbt ...
+[2025-09-14 19:51:51] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project
+[2025-09-14 19:51:52] [info] loading settings for project chipyardRoot from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project hardfloat from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project rocketConfig from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project testchipip from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project constellation from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project icenet from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project hwacha from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project boom from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project cva6 from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project ibex from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project sodor from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project gemmini from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project tapeout from build.sbt ...
+[2025-09-14 19:51:52] [info] loading settings for project vortex from build.sbt ...
+[2025-09-14 19:51:53] [info] loading settings for project sim-build from plugins.sbt ...
+[2025-09-14 19:51:53] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/project
+[2025-09-14 19:51:53] [info] loading settings for project firesim from build.sbt ...
+[2025-09-14 19:51:53] [info] loading settings for project targetutils from build.sbt ...
+[2025-09-14 19:51:53] [info] loading settings for project midas from build.sbt ...
+[2025-09-14 19:51:53] [info] resolving key references (37744 settings) ...
+[2025-09-14 19:51:56] [info] set current project to chipyardRoot (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-09-14 19:51:57] [info] set current project to firechip (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-09-14 19:52:04] [info] running chipyard.Generator --target-dir /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz --name firesim.firesim.FireSim.FireSimV2S1C --top-module firesim.firesim.FireSim --legacy-configs firesim.firesim:FireSimV2S1C
+[2025-09-14 19:52:15] L2 InclusiveCache Client Map:
+[2025-09-14 19:52:15] 	0 <= serial-tl
+[2025-09-14 19:52:15] 	1 <= vortex-AXI4-mem-port ID#0
+[2025-09-14 19:52:15] 	2 <= vortex-AXI4-mem-port ID#1
+[2025-09-14 19:52:15] 	3 <= vortex-AXI4-mem-port ID#2
+[2025-09-14 19:52:15] 	4 <= vortex-AXI4-mem-port ID#3
+[2025-09-14 19:52:15] 	5 <= vortex-AXI4-mem-port ID#4
+[2025-09-14 19:52:15] 	6 <= vortex-AXI4-mem-port ID#5
+[2025-09-14 19:52:15] 	7 <= vortex-AXI4-mem-port ID#6
+[2025-09-14 19:52:15] 	8 <= vortex-AXI4-mem-port ID#7
+[2025-09-14 19:52:15] 
+[2025-09-14 19:52:16] make[1]: Entering directory '/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/integrations/chipyard/generators_vortex/src/main/resources/vsrc'
+[2025-09-14 19:52:16] rm -rf VortexAXIBlackbox.preprocessed.sv preproc
+[2025-09-14 19:52:16] mkdir -p preproc
+[2025-09-14 19:52:16] cat /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_gpu_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/cf_math_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/Vortex.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/Vortex_axi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_socket.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_cluster.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fp_rounding.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fcvt_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_fma.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_fpnew.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_dpi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_ncp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_div.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_sqrt.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fncp_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_dsp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_cvt.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fp_classifier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_wrap.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_tags.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_bank.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_mshr.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_bypass.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_cluster.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_bank_flush.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_flush.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_repl.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_mem_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lmem_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_mem_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_local_mem.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_local_mem_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_decode.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_ipdom_stack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_uuid_gen.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_muldiv.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_int.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_fetch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_csr_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_schedule.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dispatch_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_ibuffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_lsu_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_wctl_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_fpu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_execute.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_core.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dcr_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_scoreboard.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_mem_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_gather_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_split_join.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_operands.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_sfu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_csr_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_pe_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_commit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_core_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_mem_unit_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_lsu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dispatch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_concat.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_transpose.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_avs_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_pack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_allocator.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_index_queue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_insert.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_elastic_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_remove.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_sp_ram.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_edge_trigger.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_divider.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_serial_mul.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_coalescer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_shift_register.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_axi_write_ack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pe_serializer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scope_tap.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_rr_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pending_size.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pipe_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_index_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_mux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_elastic_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_toggle_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pipe_register.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_lzc.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_skid_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_axi_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_omega.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bypass_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_reduce_tree.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scan.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_shift.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_serial_div.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_reset_relay.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_dp_ram.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_priority_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_matrix_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_unpack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_async_ram_patch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scope_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_find_first.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_priority_encoder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_cyclic_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_popcount.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_encoder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_data_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_demux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_bank_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_generic_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_placeholder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_multiplier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_scheduler.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_xbar.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_fifo_queue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_ibuffer_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_scoreboard_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_operands_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_dispatch_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_sched_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_warp_ctl_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_schedule_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_fetch_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_sched_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_execute_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_decode_sched_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_branch_ctl_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_dcr_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_writeback_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_decode_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_classifier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_fma_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_rounding.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_multifmt_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_noncomp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_cast_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_th_64_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_block.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_th_32.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_fma.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_fmt_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/lzc.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/rr_arb_tree.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_frbus.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_src_type.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_dp.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_special.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ctrl.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_top.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ff1.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_pack_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_prepare.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_round_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_srt_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_pack.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_scalar_dp.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_prepare.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_bound_table.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ff1.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_round.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_double.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_with_sqrt.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ctrl.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_top.v /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/vortex/src/main/resources/vsrc/VortexAXIBlackbox.sv > preproc/concatenated_preproc.sv
+[2025-09-14 19:52:16] LC_ALL=C /cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/bin/verilator --cc -DNUM_CLUSTERS=1 -DNUM_CORES=2 -DNUM_WARPS=4 -DNUM_THREADS=4 -DSTARTUP_ADDR="32'h80000000"  -DL2_ENABLE -DL3_ENABLE -DPERF_ENABLE -DVIVADO -DSYNTHESIS -DFPU_FPNEW -E -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/dpi -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/include/common_cells -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/include -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl preproc/concatenated_preproc.sv > VortexAXIBlackbox.preprocessed.sv
+[2025-09-14 19:52:16] make[1]: Leaving directory '/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/integrations/chipyard/generators_vortex/src/main/resources/vsrc'
+[2025-09-14 19:52:16] Interrupt map (1 harts 1 interrupts):
+[2025-09-14 19:52:16]   [1, 1] => uart_0
+[2025-09-14 19:52:16] 
+[2025-09-14 19:52:17] <stdin>:103.26-108.5: Warning (simple_bus_reg): /soc/subsystem_l2_clock: missing or empty reg/ranges property
+[2025-09-14 19:52:17] <stdin>:109.28-114.5: Warning (simple_bus_reg): /soc/subsystem_mbus_clock: missing or empty reg/ranges property
+[2025-09-14 19:52:17] <stdin>:115.28-120.5: Warning (simple_bus_reg): /soc/subsystem_pbus_clock: missing or empty reg/ranges property
+[2025-09-14 19:52:17] <stdin>:121.28-126.5: Warning (simple_bus_reg): /soc/subsystem_sbus_clock: missing or empty reg/ranges property
+[2025-09-14 19:52:17] <stdin>:25.29-29.6: Warning (interrupt_provider): /cpus/cpu@0/interrupt-controller: Missing #address-cells in interrupt provider
+[2025-09-14 19:52:17] <stdin>:74.36-83.5: Warning (interrupt_provider): /soc/interrupt-controller@c000000: Missing #address-cells in interrupt provider
+[2025-09-14 19:52:17] Clock subsystem_sbus_0: using diplomatically specified frequency of 1000.0.
+[2025-09-14 19:52:17] Clock subsystem_sbus_1: using diplomatically specified frequency of 1000.0.
+[2025-09-14 19:52:17] Clock subsystem_pbus_0: using diplomatically specified frequency of 1000.0.
+[2025-09-14 19:52:17] Clock subsystem_mbus_0: using diplomatically specified frequency of 1000.0.
+[2025-09-14 19:52:17] /dts-v1/;
+[2025-09-14 19:52:17] 
+[2025-09-14 19:52:17] / {
+[2025-09-14 19:52:17] 	#address-cells = <1>;
+[2025-09-14 19:52:17] 	#size-cells = <1>;
+[2025-09-14 19:52:17] 	compatible = "freechips,rocketchip-unknown-dev";
+[2025-09-14 19:52:17] 	model = "freechips,rocketchip-unknown";
+[2025-09-14 19:52:17] 	L25: aliases {
+[2025-09-14 19:52:17] 		serial0 = &L18;
+[2025-09-14 19:52:17] 	};
+[2025-09-14 19:52:17] 	L24: cpus {
+[2025-09-14 19:52:17] 		#address-cells = <1>;
+[2025-09-14 19:52:17] 		#size-cells = <0>;
+[2025-09-14 19:52:17] 		timebase-frequency = <1000000>;
+[2025-09-14 19:52:17] 		L7: cpu@0 {
+[2025-09-14 19:52:17] 			clock-frequency = <1700000000>;
+[2025-09-14 19:52:17] 			compatible = "ntnu,vortex", "riscv";
+[2025-09-14 19:52:17] 			device_type = "cpu";
+[2025-09-14 19:52:17] 			hardware-exec-breakpoint-count = <0>;
+[2025-09-14 19:52:17] 			next-level-cache = <&L5>;
+[2025-09-14 19:52:17] 			reg = <0x0>;
+[2025-09-14 19:52:17] 			riscv,isa = "rv32emfd";
+[2025-09-14 19:52:17] 			status = "okay";
+[2025-09-14 19:52:17] 			timebase-frequency = <1000000>;
+[2025-09-14 19:52:17] 			L6: interrupt-controller {
+[2025-09-14 19:52:17] 				#interrupt-cells = <1>;
+[2025-09-14 19:52:17] 				compatible = "riscv,cpu-intc";
+[2025-09-14 19:52:17] 				interrupt-controller;
+[2025-09-14 19:52:17] 			};
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 	};
+[2025-09-14 19:52:17] 	L26: htif {
+[2025-09-14 19:52:17] 		compatible = "ucb,htif0";
+[2025-09-14 19:52:17] 	};
+[2025-09-14 19:52:17] 	L12: memory@70000000 {
+[2025-09-14 19:52:17] 		device_type = "memory";
+[2025-09-14 19:52:17] 		reg = <0x70000000 0x80000000>;
+[2025-09-14 19:52:17] 	};
+[2025-09-14 19:52:17] 	L23: soc {
+[2025-09-14 19:52:17] 		#address-cells = <1>;
+[2025-09-14 19:52:17] 		#size-cells = <1>;
+[2025-09-14 19:52:17] 		compatible = "freechips,rocketchip-unknown-soc", "simple-bus";
+[2025-09-14 19:52:17] 		ranges;
+[2025-09-14 19:52:17] 		L15: boot-address-reg@4000 {
+[2025-09-14 19:52:17] 			reg = <0x4000 0x1000>;
+[2025-09-14 19:52:17] 			reg-names = "control";
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 		L5: cache-controller@2010000 {
+[2025-09-14 19:52:17] 			cache-block-size = <64>;
+[2025-09-14 19:52:17] 			cache-level = <2>;
+[2025-09-14 19:52:17] 			cache-sets = <1024>;
+[2025-09-14 19:52:17] 			cache-size = <524288>;
+[2025-09-14 19:52:17] 			cache-unified;
+[2025-09-14 19:52:17] 			compatible = "sifive,inclusivecache0", "cache";
+[2025-09-14 19:52:17] 			next-level-cache = <&L12 &L16 &L17>;
+[2025-09-14 19:52:17] 			reg = <0x2010000 0x1000>;
+[2025-09-14 19:52:17] 			reg-names = "control";
+[2025-09-14 19:52:17] 			sifive,mshr-count = <5>;
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 		L9: clint@2000000 {
+[2025-09-14 19:52:17] 			compatible = "riscv,clint0";
+[2025-09-14 19:52:17] 			interrupts-extended = <&L6 3 &L6 7>;
+[2025-09-14 19:52:17] 			reg = <0x2000000 0x10000>;
+[2025-09-14 19:52:17] 			reg-names = "control";
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 		L19: clock-gater@100000 {
+[2025-09-14 19:52:17] 			reg = <0x100000 0x1000>;
+[2025-09-14 19:52:17] 			reg-names = "control";
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 		L2: error-device@3000 {
+[2025-09-14 19:52:17] 			compatible = "sifive,error0";
+[2025-09-14 19:52:17] 			reg = <0x3000 0x1000>;
+[2025-09-14 19:52:17] 		};
+[2025-09-14 19:52:17] 		L8: interrupt-controller@c000000 {
+[2025-09-14 19:52:18] 			#interrupt-cells = <1>;
+[2025-09-14 19:52:18] 			compatible = "riscv,plic0";
+[2025-09-14 19:52:18] 			interrupt-controller;
+[2025-09-14 19:52:18] 			interrupts-extended = <&L6 11>;
+[2025-09-14 19:52:18] 			reg = <0xc000000 0x4000000>;
+[2025-09-14 19:52:18] 			reg-names = "control";
+[2025-09-14 19:52:18] 			riscv,max-priority = <1>;
+[2025-09-14 19:52:18] 			riscv,ndev = <1>;
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L16: lbwif-ram@10000000 {
+[2025-09-14 19:52:18] 			reg = <0x10000000 0x1000>;
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L17: lbwif-rom@20000 {
+[2025-09-14 19:52:18] 			reg = <0x20000 0x10000>;
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L14: rom@10000 {
+[2025-09-14 19:52:18] 			compatible = "sifive,rom0";
+[2025-09-14 19:52:18] 			reg = <0x10000 0x10000>;
+[2025-09-14 19:52:18] 			reg-names = "mem";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L18: serial@54000000 {
+[2025-09-14 19:52:18] 			clocks = <&L1>;
+[2025-09-14 19:52:18] 			compatible = "sifive,uart0";
+[2025-09-14 19:52:18] 			interrupt-parent = <&L8>;
+[2025-09-14 19:52:18] 			interrupts = <1>;
+[2025-09-14 19:52:18] 			reg = <0x54000000 0x1000>;
+[2025-09-14 19:52:18] 			reg-names = "control";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L4: subsystem_l2_clock {
+[2025-09-14 19:52:18] 			#clock-cells = <0>;
+[2025-09-14 19:52:18] 			clock-frequency = <1000000000>;
+[2025-09-14 19:52:18] 			clock-output-names = "subsystem_l2_clock";
+[2025-09-14 19:52:18] 			compatible = "fixed-clock";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L3: subsystem_mbus_clock {
+[2025-09-14 19:52:18] 			#clock-cells = <0>;
+[2025-09-14 19:52:18] 			clock-frequency = <1000000000>;
+[2025-09-14 19:52:18] 			clock-output-names = "subsystem_mbus_clock";
+[2025-09-14 19:52:18] 			compatible = "fixed-clock";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L1: subsystem_pbus_clock {
+[2025-09-14 19:52:18] 			#clock-cells = <0>;
+[2025-09-14 19:52:18] 			clock-frequency = <1000000000>;
+[2025-09-14 19:52:18] 			clock-output-names = "subsystem_pbus_clock";
+[2025-09-14 19:52:18] 			compatible = "fixed-clock";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L0: subsystem_sbus_clock {
+[2025-09-14 19:52:18] 			#clock-cells = <0>;
+[2025-09-14 19:52:18] 			clock-frequency = <1000000000>;
+[2025-09-14 19:52:18] 			clock-output-names = "subsystem_sbus_clock";
+[2025-09-14 19:52:18] 			compatible = "fixed-clock";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L20: tile-reset-setter@110000 {
+[2025-09-14 19:52:18] 			reg = <0x110000 0x1000>;
+[2025-09-14 19:52:18] 			reg-names = "control";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 		L21: vortex_control_signals@1000 {
+[2025-09-14 19:52:18] 			compatible = "ntnu,vcs";
+[2025-09-14 19:52:18] 			reg = <0x1000 0x1000>;
+[2025-09-14 19:52:18] 			reg-names = "control";
+[2025-09-14 19:52:18] 		};
+[2025-09-14 19:52:18] 	};
+[2025-09-14 19:52:18] };
+[2025-09-14 19:52:18] 
+[2025-09-14 19:52:18] Generated Address Map
+[2025-09-14 19:52:18] 	    1000 -     2000 ARW   vortex_control_signals@1000
+[2025-09-14 19:52:18] 	    3000 -     4000 ARWX  error-device@3000
+[2025-09-14 19:52:18] 	    4000 -     5000 ARW   boot-address-reg@4000
+[2025-09-14 19:52:18] 	   10000 -    20000  R X  rom@10000
+[2025-09-14 19:52:18] 	   20000 -    30000  R XC lbwif-rom@20000
+[2025-09-14 19:52:18] 	  100000 -   101000 ARW   clock-gater@100000
+[2025-09-14 19:52:18] 	  110000 -   111000 ARW   tile-reset-setter@110000
+[2025-09-14 19:52:18] 	 2000000 -  2010000 ARW   clint@2000000
+[2025-09-14 19:52:18] 	 2010000 -  2011000 ARW   cache-controller@2010000
+[2025-09-14 19:52:18] 	 c000000 - 10000000 ARW   interrupt-controller@c000000
+[2025-09-14 19:52:18] 	10000000 - 10001000 ARWXC lbwif-ram@10000000
+[2025-09-14 19:52:18] 	54000000 - 54001000 ARW   serial@54000000
+[2025-09-14 19:52:18] 	70000000 - f0000000 ARWXC memory@70000000
+[2025-09-14 19:52:18] 
+[2025-09-14 19:52:18] 
+[2025-09-14 19:52:18] firesimBuildTopClockGenerator Frequency Summary
+[2025-09-14 19:52:18]   Input Reference Frequency: 1000.0 MHz
+[2025-09-14 19:52:18]   Output clock subsystem_sbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock subsystem_sbus_1, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock subsystem_pbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock subsystem_fbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock subsystem_mbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock subsystem_cbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock implicit_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18] 
+[2025-09-14 19:52:18] firesimOverallClockBridge Frequency Summary
+[2025-09-14 19:52:18]   Input Reference Frequency: 1000.0 MHz
+[2025-09-14 19:52:18]   Output clock buildtop_reference_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:18]   Output clock implicit_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-09-14 19:52:19] [success] Total time: 22 s, completed 14 Sept 2025, 19:52:19
+[2025-09-14 19:52:20] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard && java -jar /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/rocket-chip/sbt-launch.jar  ";project firechip; runMain midas.stage.GoldenGateMain  -i /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S1C.fir -td /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz -faf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S1C.anno.json -ggcp firesim.firesim -ggcs BaseF1Config1Mem_F25MHz --output-filename-base FireSim-generated --no-dedup "
+[2025-09-14 19:52:20] Picked up JAVA_TOOL_OPTIONS: -Xmx128G -Xss8M -Djava.io.tmpdir=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.java_tmp
+[2025-09-14 19:52:20] WARNING: A terminally deprecated method in java.lang.System has been called
+[2025-09-14 19:52:20] WARNING: System::setSecurityManager has been called by sbt.TrapExit$ (file:/cluster/home/eirikwit/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/run_2.12-1.5.5.jar)
+[2025-09-14 19:52:20] WARNING: Please consider reporting this to the maintainers of sbt.TrapExit$
+[2025-09-14 19:52:20] WARNING: System::setSecurityManager will be removed in a future release
+[2025-09-14 19:52:21] [info] welcome to sbt 1.5.5 (N/A Java 17.0.3-internal)
+[2025-09-14 19:52:22] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project/project
+[2025-09-14 19:52:23] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project
+[2025-09-14 19:52:23] [info] loading settings for project chipyard-build from plugins.sbt ...
+[2025-09-14 19:52:23] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project
+[2025-09-14 19:52:23] [info] loading settings for project chipyardRoot from build.sbt ...
+[2025-09-14 19:52:23] [info] loading settings for project hardfloat from build.sbt ...
+[2025-09-14 19:52:23] [info] loading settings for project rocketConfig from build.sbt ...
+[2025-09-14 19:52:23] [info] loading settings for project testchipip from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project constellation from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project icenet from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project hwacha from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project boom from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project cva6 from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project ibex from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project sodor from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project gemmini from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project tapeout from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project vortex from build.sbt ...
+[2025-09-14 19:52:24] [info] loading settings for project sim-build from plugins.sbt ...
+[2025-09-14 19:52:24] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/project
+[2025-09-14 19:52:25] [info] loading settings for project firesim from build.sbt ...
+[2025-09-14 19:52:25] [info] loading settings for project targetutils from build.sbt ...
+[2025-09-14 19:52:25] [info] loading settings for project midas from build.sbt ...
+[2025-09-14 19:52:25] [info] resolving key references (37744 settings) ...
+[2025-09-14 19:52:28] [info] set current project to chipyardRoot (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-09-14 19:52:28] [info] set current project to firechip (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-09-14 19:52:35] [info] running midas.stage.GoldenGateMain -i /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S1C.fir -td /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz -faf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S1C.anno.json -ggcp firesim.firesim -ggcs BaseF1Config1Mem_F25MHz --output-filename-base FireSim-generated --no-dedup
+[2025-09-14 19:53:05] Instantiating bridge peekPokeBridge of type midas.widgets.PeekPokeBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: PeekPokeKey(List(),List(SerializableField(reset,SerializableType(UInt),1)),2)
+[2025-09-14 19:53:05] Instantiating bridge resetBridge of type midas.widgets.ResetPulseBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: ResetPulseBridgeParameters(true,50,1023)
+[2025-09-14 19:53:05] Instantiating bridge ep of type firesim.bridges.SerialBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: SerialBridgeParams(Some(MainMemory_0))
+[2025-09-14 19:53:05] Instantiating bridge ep_1 of type midas.models.FASEDMemoryTimingModel
+[2025-09-14 19:53:05]   With constructor arguments: CompleteConfig(LatencyPipeConfig(BaseParams(16,16,None,None,None,None,256,None,256,None,false,false,false,false,None,true,true,false,List(0, 2, 4, 8),0)),NastiParameters(32,32,4),Some(AXI4EdgeSummary(16,16,Some(1),Some(6),List(AddressSet(0x70000000, 0xfffffff), AddressSet(0x80000000, 0x3fffffff), AddressSet(0xc0000000, 0x1fffffff), AddressSet(0xe0000000, 0xfffffff)))),Some(MainMemory_0))
+[2025-09-14 19:53:05] Instantiating bridge ep_2 of type firesim.bridges.TraceDoctorBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: TraceDoctorKey(2)
+[2025-09-14 19:53:05] Instantiating bridge ep_3 of type firesim.bridges.UARTBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: UARTKey(UARTParams(1409286144,8,2,16,4,3,256,256,false,false,false,3686400),271)
+[2025-09-14 19:53:05] Instantiating bridge clockBridge of type midas.widgets.ClockBridgeModule
+[2025-09-14 19:53:05]   With constructor arguments: ClockParameters(List(RationalClock(buildtop_reference_clock,1,1)))
+[2025-09-14 19:53:06] Generating a Midas Memory Model
+[2025-09-14 19:53:06]   Max Read Requests: 6
+[2025-09-14 19:53:06]   Max Write Requests: 6
+[2025-09-14 19:53:06]   Max Read Length: 16
+[2025-09-14 19:53:06]   Max Write Length: 16
+[2025-09-14 19:53:06]   Max Read ID Reuse: 1
+[2025-09-14 19:53:06]   Max Write ID Reuse: 1
+[2025-09-14 19:53:06] 
+[2025-09-14 19:53:06] Timing Model Parameters
+[2025-09-14 19:53:06]   Timing Model Class: Latency Bandwidth Pipe
+[2025-09-14 19:53:06]   No LLC Model Instantiated
+[2025-09-14 19:53:06] 
+[2025-09-14 19:53:06] TraceDoctorBridgeModule
+[2025-09-14 19:53:06]     traceWidth      2
+[2025-09-14 19:53:06]     dmaTokenWidth   512
+[2025-09-14 19:53:06]     requiredTokens  {
+[2025-09-14 19:53:06]         0 -> traceBits(511, 0)
+[2025-09-14 19:53:06]     }
+[2025-09-14 19:53:06] 
+[2025-09-14 19:53:07] Bridge Streams To CPU:
+[2025-09-14 19:53:07]   TRACEDOCTORBRIDGEMODULE_0_to_cpu_stream, FPGA Buffer Depth: 6144 Beats
+[2025-09-14 19:53:07] Bridge Streams From CPU:
+[2025-09-14 19:53:07]   None
+[2025-09-14 19:53:07] Simulator Memory Map:
+[2025-09-14 19:53:07]   [   0,   7f]: FASEDMemoryTimingModel_0
+[2025-09-14 19:53:07]   [  80,   bf]: SerialBridgeModule_0
+[2025-09-14 19:53:07]   [  c0,   ff]: LoadMemWidget_0
+[2025-09-14 19:53:07]   [ 100,  11f]: PeekPokeBridgeModule_0
+[2025-09-14 19:53:07]   [ 120,  13f]: UARTBridgeModule_0
+[2025-09-14 19:53:07]   [ 140,  15f]: ClockBridgeModule_0
+[2025-09-14 19:53:07]   [ 160,  16f]: SimulationMaster_0
+[2025-09-14 19:53:07]   [ 170,  17f]: TraceDoctorBridgeModule_0
+[2025-09-14 19:53:07]   [ 180,  187]: ResetPulseBridgeModule_0
+[2025-09-14 19:53:07]   [ 188,  18b]: CPUManagedStreamEngine_0
+[2025-09-14 19:53:07] Total Host-FPGA DRAM Allocated: 2.000 GiB of 16.000 GiB available.
+[2025-09-14 19:53:07] Host-FPGA DRAM Allocation Map:
+[2025-09-14 19:53:07]   MainMemory_0 -> [0x0, 0x7FFFFFFF]
+[2025-09-14 19:53:07]     Associated bridges: FASEDMemoryTimingModel_0
+[2025-09-14 19:53:15] Auto ILA: p(EnableAutoILA) unset. Skipping AutoILATransform
+[2025-09-14 19:53:27] [success] Total time: 59 s, completed 14 Sept 2025, 19:53:27
+[2025-09-14 19:53:28] grep -sh ^ /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/firrtl_black_box_resource_files.f | \
+[2025-09-14 19:53:28] xargs cat >> /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.sv # Append blackboxes to FPGA wrapper, if any
+[2025-09-14 19:53:28] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design
+[2025-09-14 19:53:28] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.sv /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_top.sv
+[2025-09-14 19:53:28] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design
+[2025-09-14 19:53:28] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.defines.vh /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_defines.vh
+[2025-09-14 19:53:28] echo "\`define ABSTRACTCLOCKGATE" >> /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_defines.vh
+[2025-09-14 19:53:28] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design
+[2025-09-14 19:53:28] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.synthesis.xdc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_synth.xdc
+[2025-09-14 19:53:28] sed -i "s/ firesim_top\// design_1_i\/firesim_wrapper_0\/inst\/firesim_top\//g" /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_synth.xdc
+[2025-09-14 19:53:28] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design
+[2025-09-14 19:53:28] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.implementation.xdc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_impl.xdc
+[2025-09-14 19:53:28] sed -i "s/ WRAPPER_INST\/CL\/firesim_top\// design_1_i\/firesim_wrapper_0\/inst\/firesim_top\//g" /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/design/firesim_impl.xdc
+[2025-09-14 19:53:28] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/scripts
+[2025-09-14 19:53:28] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/FireSim-generated.env.tcl /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/scripts/firesim_env.tcl
+[2025-09-14 19:53:28] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-14 19:53:56] 
+[2025-09-14 19:53:56] ****** Vivado v2022.2 (64-bit)
+[2025-09-14 19:53:56]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-14 19:53:56]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-14 19:53:56]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-14 19:53:56] 
+[2025-09-14 19:53:56] source ./scripts/main.tcl
+[2025-09-14 19:53:56] # set root_dir [pwd]
+[2025-09-14 19:53:56] # set vivado_version [version -short]
+[2025-09-14 19:53:56] # proc retrieveVersionedFile {filename version} {
+[2025-09-14 19:53:56] #   set first [file rootname $filename]
+[2025-09-14 19:53:56] #   set last [file extension $filename]
+[2025-09-14 19:53:56] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-14 19:53:56] #     return ${first}_${version}${last}
+[2025-09-14 19:53:56] #   }
+[2025-09-14 19:53:56] #   return $filename
+[2025-09-14 19:53:56] # }
+[2025-09-14 19:53:56] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-14 19:53:56] #     puts "ERROR: could not find $sourceFile"
+[2025-09-14 19:53:56] #     exit 1
+[2025-09-14 19:53:56] # }
+[2025-09-14 19:53:56] # source $sourceFile
+[2025-09-14 19:53:56] ## set jobs 12
+[2025-09-14 19:53:56] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-14 19:53:56] ## set part xcu250-figd2104-2L-e
+[2025-09-14 19:53:56] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-14 19:53:56] #     if {[file exists ${path}]} {
+[2025-09-14 19:53:56] #         file delete -force -- ${path}
+[2025-09-14 19:53:56] #     }
+[2025-09-14 19:53:56] # }
+[2025-09-14 19:53:56] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-14 19:54:03] create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1759.703 ; gain = 96.992 ; free physical = 149329 ; free virtual = 153893
+[2025-09-14 19:54:03] # set_property board_part $board_part [current_project]
+[2025-09-14 19:54:03] # foreach addFile [list ${root_dir}/design/axi_tieoff_master.v ${root_dir}/design/firesim_wrapper.v ${root_dir}/design/firesim_top.sv ${root_dir}/design/firesim_defines.vh] {
+[2025-09-14 19:54:03] #   set addFile [retrieveVersionedFile $addFile $vivado_version]
+[2025-09-14 19:54:03] #   if {![file exists $addFile]} {
+[2025-09-14 19:54:03] #     puts "ERROR: could not find file $addFile"
+[2025-09-14 19:54:03] #     exit 1
+[2025-09-14 19:54:03] #   }
+[2025-09-14 19:54:03] #   add_files $addFile
+[2025-09-14 19:54:03] #   if {[file extension $addFile] == ".vh"} {
+[2025-09-14 19:54:03] #     set_property IS_GLOBAL_INCLUDE 1 [get_files $addFile]
+[2025-09-14 19:54:03] #   }
+[2025-09-14 19:54:03] # }
+[2025-09-14 19:54:03] # if {[file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/firesim_env.tcl $vivado_version]]]} {
+[2025-09-14 19:54:03] #   source $sourceFile
+[2025-09-14 19:54:03] # }
+[2025-09-14 19:54:04] ## set desired_host_frequency 25
+[2025-09-14 19:54:04] ## set strategy "TIMING"
+[2025-09-14 19:54:04] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/create_bd.tcl $vivado_version]]]} {
+[2025-09-14 19:54:04] #   puts "ERROR: could not find $sourceFile"
+[2025-09-14 19:54:04] #   exit 1
+[2025-09-14 19:54:04] # }
+[2025-09-14 19:54:04] # source $sourceFile
+[2025-09-14 19:54:04] ## namespace eval _tcl {
+[2025-09-14 19:54:04] ## proc get_script_folder {} {
+[2025-09-14 19:54:04] ##    set script_path [file normalize [info script]]
+[2025-09-14 19:54:04] ##    set script_folder [file dirname $script_path]
+[2025-09-14 19:54:04] ##    return $script_folder
+[2025-09-14 19:54:04] ## }
+[2025-09-14 19:54:04] ## }
+[2025-09-14 19:54:04] ## variable script_folder
+[2025-09-14 19:54:04] ## set script_folder [_tcl::get_script_folder]
+[2025-09-14 19:54:04] ## set scripts_vivado_version 2022.2
+[2025-09-14 19:54:04] ## set current_vivado_version [version -short]
+[2025-09-14 19:54:04] ## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+[2025-09-14 19:54:04] ##    puts ""
+[2025-09-14 19:54:04] ##    catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+[2025-09-14 19:54:04] ## 
+[2025-09-14 19:54:04] ##    return 1
+[2025-09-14 19:54:04] ## }
+[2025-09-14 19:54:04] ## variable design_name
+[2025-09-14 19:54:04] ## set design_name design_1
+[2025-09-14 19:54:04] ## set errMsg ""
+[2025-09-14 19:54:04] ## set nRet 0
+[2025-09-14 19:54:04] ## set cur_design [current_bd_design -quiet]
+[2025-09-14 19:54:04] ## set list_cells [get_bd_cells -quiet]
+[2025-09-14 19:54:04] ## if { ${design_name} eq "" } {
+[2025-09-14 19:54:04] ##    # USE CASES:
+[2025-09-14 19:54:04] ##    #    1) Design_name not set
+[2025-09-14 19:54:04] ## 
+[2025-09-14 19:54:04] ##    set errMsg "Please set the variable <design_name> to a non-empty value."
+[2025-09-14 19:54:04] ##    set nRet 1
+[2025-09-14 19:54:04] ## 
+[2025-09-14 19:54:04] ## } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+[2025-09-14 19:54:04] ##    # USE CASES:
+[2025-09-14 19:54:04] ##    #    2): Current design opened AND is empty AND names same.
+[2025-09-14 19:54:04] ##    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+[2025-09-14 19:54:04] ##    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+[2025-09-14 19:54:04] ## 
+[2025-09-14 19:54:04] ##    if { $cur_design ne $design_name } {
+[2025-09-14 19:54:04] ##       common::send_gid_msg -ssname BD::TCL -id 2001 -severity "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+[2025-09-14 19:54:04] ##       set design_name [get_property NAME $cur_design]
+[2025-09-14 19:54:05] ##    }
+[2025-09-14 19:54:05] ##    common::send_gid_msg -ssname BD::TCL -id 2002 -severity "INFO" "Constructing design in IPI design <$cur_design>..."
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ## } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+[2025-09-14 19:54:05] ##    # USE CASES:
+[2025-09-14 19:54:05] ##    #    5) Current design opened AND has components AND same names.
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+[2025-09-14 19:54:05] ##    set nRet 1
+[2025-09-14 19:54:05] ## } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+[2025-09-14 19:54:05] ##    # USE CASES: 
+[2025-09-14 19:54:05] ##    #    6) Current opened design, has components, but diff names, design_name exists in project.
+[2025-09-14 19:54:05] ##    #    7) No opened design, design_name exists in project.
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+[2025-09-14 19:54:05] ##    set nRet 2
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ## } else {
+[2025-09-14 19:54:05] ##    # USE CASES:
+[2025-09-14 19:54:05] ##    #    8) No opened design, design_name not in project.
+[2025-09-14 19:54:05] ##    #    9) Current opened design, has components, but diff names, design_name not in project.
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ##    common::send_gid_msg -ssname BD::TCL -id 2003 -severity "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ##    create_bd_design $design_name
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ##    common::send_gid_msg -ssname BD::TCL -id 2004 -severity "INFO" "Making design <$design_name> as current_bd_design."
+[2025-09-14 19:54:05] ##    current_bd_design $design_name
+[2025-09-14 19:54:05] ## 
+[2025-09-14 19:54:05] ## }
+[2025-09-14 19:54:05] INFO: [BD::TCL 103-2003] Currently there is no design <design_1> in project, so creating one...
+[2025-09-14 19:54:11] Wrote  : </cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.srcs/sources_1/bd/design_1/design_1.bd> 
+[2025-09-14 19:54:11] create_bd_design: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:07 . Memory (MB): peak = 1872.344 ; gain = 47.805 ; free physical = 149333 ; free virtual = 153936
+[2025-09-14 19:54:12] INFO: [BD::TCL 103-2004] Making design <design_1> as current_bd_design.
+[2025-09-14 19:54:12] ## common::send_gid_msg -ssname BD::TCL -id 2005 -severity "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+[2025-09-14 19:54:12] INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "design_1".
+[2025-09-14 19:54:12] ## if { $nRet != 0 } {
+[2025-09-14 19:54:12] ##    catch {common::send_gid_msg -ssname BD::TCL -id 2006 -severity "ERROR" $errMsg}
+[2025-09-14 19:54:12] ##    return $nRet
+[2025-09-14 19:54:12] ## }
+[2025-09-14 19:54:12] ## set bCheckIPsPassed 1
+[2025-09-14 19:54:12] ## set bCheckIPs 1
+[2025-09-14 19:54:12] ## if { $bCheckIPs == 1 } {
+[2025-09-14 19:54:12] ##    set list_check_ips "\ 
+[2025-09-14 19:54:12] ## xilinx.com:ip:axi_clock_converter:2.1\
+[2025-09-14 19:54:12] ## xilinx.com:ip:axi_dwidth_converter:2.1\
+[2025-09-14 19:54:12] ## xilinx.com:ip:clk_wiz:6.0\
+[2025-09-14 19:54:12] ## xilinx.com:ip:ddr4:2.2\
+[2025-09-14 19:54:12] ## xilinx.com:ip:proc_sys_reset:5.0\
+[2025-09-14 19:54:12] ## xilinx.com:ip:util_vector_logic:2.0\
+[2025-09-14 19:54:12] ## xilinx.com:ip:util_ds_buf:2.2\
+[2025-09-14 19:54:12] ## xilinx.com:ip:xdma:4.1\
+[2025-09-14 19:54:12] ## xilinx.com:ip:xlconstant:1.1\
+[2025-09-14 19:54:12] ## "
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    set list_ips_missing ""
+[2025-09-14 19:54:12] ##    common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    foreach ip_vlnv $list_check_ips {
+[2025-09-14 19:54:12] ##       set ip_obj [get_ipdefs -all $ip_vlnv]
+[2025-09-14 19:54:12] ##       if { $ip_obj eq "" } {
+[2025-09-14 19:54:12] ##          lappend list_ips_missing $ip_vlnv
+[2025-09-14 19:54:12] ##       }
+[2025-09-14 19:54:12] ##    }
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    if { $list_ips_missing ne "" } {
+[2025-09-14 19:54:12] ##       catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+[2025-09-14 19:54:12] ##       set bCheckIPsPassed 0
+[2025-09-14 19:54:12] ##    }
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ## }
+[2025-09-14 19:54:12] INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+[2025-09-14 19:54:12] xilinx.com:ip:axi_clock_converter:2.1 xilinx.com:ip:axi_dwidth_converter:2.1 xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:ddr4:2.2 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:util_vector_logic:2.0 xilinx.com:ip:util_ds_buf:2.2 xilinx.com:ip:xdma:4.1 xilinx.com:ip:xlconstant:1.1  .
+[2025-09-14 19:54:12] ## set bCheckModules 1
+[2025-09-14 19:54:12] ## if { $bCheckModules == 1 } {
+[2025-09-14 19:54:12] ##    set list_check_mods "\ 
+[2025-09-14 19:54:12] ## axi_tieoff_master\
+[2025-09-14 19:54:12] ## firesim_wrapper\
+[2025-09-14 19:54:12] ## "
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    set list_mods_missing ""
+[2025-09-14 19:54:12] ##    common::send_gid_msg -ssname BD::TCL -id 2020 -severity "INFO" "Checking if the following modules exist in the project's sources: $list_check_mods ."
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    foreach mod_vlnv $list_check_mods {
+[2025-09-14 19:54:12] ##       if { [can_resolve_reference $mod_vlnv] == 0 } {
+[2025-09-14 19:54:12] ##          lappend list_mods_missing $mod_vlnv
+[2025-09-14 19:54:12] ##       }
+[2025-09-14 19:54:12] ##    }
+[2025-09-14 19:54:12] ## 
+[2025-09-14 19:54:12] ##    if { $list_mods_missing ne "" } {
+[2025-09-14 19:54:12] ##       catch {common::send_gid_msg -ssname BD::TCL -id 2021 -severity "ERROR" "The following module(s) are not found in the project: $list_mods_missing" }
+[2025-09-14 19:54:12] ##       common::send_gid_msg -ssname BD::TCL -id 2022 -severity "INFO" "Please add source files for the missing module(s) above."
+[2025-09-14 19:54:12] ##       set bCheckIPsPassed 0
+[2025-09-14 19:54:12] ##    }
+[2025-09-14 19:54:12] ## }
+[2025-09-14 19:54:12] INFO: [BD::TCL 103-2020] Checking if the following modules exist in the project's sources:  
+[2025-09-14 19:54:12] axi_tieoff_master firesim_wrapper  .
+[2025-09-14 19:54:17] can_resolve_reference: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1880.348 ; gain = 8.004 ; free physical = 149340 ; free virtual = 153952
+[2025-09-14 19:54:17] ## if { $bCheckIPsPassed != 1 } {
+[2025-09-14 19:54:17] ##   common::send_gid_msg -ssname BD::TCL -id 2023 -severity "WARNING" "Will not continue with creation of design due to the error(s) above."
+[2025-09-14 19:54:17] ##   return 3
+[2025-09-14 19:54:17] ## }
+[2025-09-14 19:54:17] ## proc create_root_design { parentCell firesim_freq } {
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   variable script_folder
+[2025-09-14 19:54:17] ##   variable design_name
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   if { $parentCell eq "" } {
+[2025-09-14 19:54:17] ##      set parentCell [get_bd_cells /]
+[2025-09-14 19:54:17] ##   }
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Get object for parentCell
+[2025-09-14 19:54:17] ##   set parentObj [get_bd_cells $parentCell]
+[2025-09-14 19:54:17] ##   if { $parentObj == "" } {
+[2025-09-14 19:54:17] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+[2025-09-14 19:54:17] ##      return
+[2025-09-14 19:54:17] ##   }
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Make sure parentObj is hier blk
+[2025-09-14 19:54:17] ##   set parentType [get_property TYPE $parentObj]
+[2025-09-14 19:54:17] ##   if { $parentType ne "hier" } {
+[2025-09-14 19:54:17] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+[2025-09-14 19:54:17] ##      return
+[2025-09-14 19:54:17] ##   }
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Save current instance; Restore later
+[2025-09-14 19:54:17] ##   set oldCurInst [current_bd_instance .]
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Set parent object as current
+[2025-09-14 19:54:17] ##   current_bd_instance $parentObj
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Create interface ports
+[2025-09-14 19:54:17] ##   set ddr4_sdram_c0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddr4_rtl:1.0 ddr4_sdram_c0 ]
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   set default_300mhz_clk0 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 default_300mhz_clk0 ]
+[2025-09-14 19:54:17] ##   set_property -dict [ list \
+[2025-09-14 19:54:17] ##    CONFIG.FREQ_HZ {300000000} \
+[2025-09-14 19:54:17] ##    ] $default_300mhz_clk0
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   set pci_express_x16 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:pcie_7x_mgt_rtl:1.0 pci_express_x16 ]
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   set pcie_refclk [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 pcie_refclk ]
+[2025-09-14 19:54:17] ##   set_property -dict [ list \
+[2025-09-14 19:54:17] ##    CONFIG.FREQ_HZ {100000000} \
+[2025-09-14 19:54:17] ##    ] $pcie_refclk
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Create ports
+[2025-09-14 19:54:17] ##   set pcie_perstn [ create_bd_port -dir I -type rst pcie_perstn ]
+[2025-09-14 19:54:17] ##   set_property -dict [ list \
+[2025-09-14 19:54:17] ##    CONFIG.POLARITY {ACTIVE_LOW} \
+[2025-09-14 19:54:17] ##  ] $pcie_perstn
+[2025-09-14 19:54:17] ##   set resetn [ create_bd_port -dir I -type rst resetn ]
+[2025-09-14 19:54:17] ##   set_property -dict [ list \
+[2025-09-14 19:54:17] ##    CONFIG.POLARITY {ACTIVE_LOW} \
+[2025-09-14 19:54:17] ##  ] $resetn
+[2025-09-14 19:54:17] ## 
+[2025-09-14 19:54:17] ##   # Create instance: axi_clock_converter_0, and set properties
+[2025-09-14 19:54:17] ##   set axi_clock_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 axi_clock_converter_0 ]
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: axi_clock_converter_1, and set properties
+[2025-09-14 19:54:18] ##   set axi_clock_converter_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 axi_clock_converter_1 ]
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: axi_dwidth_converter_0, and set properties
+[2025-09-14 19:54:18] ##   set axi_dwidth_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dwidth_converter:2.1 axi_dwidth_converter_0 ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.ACLK_ASYNC {1} \
+[2025-09-14 19:54:18] ##     CONFIG.FIFO_MODE {2} \
+[2025-09-14 19:54:18] ##     CONFIG.MI_DATA_WIDTH {512} \
+[2025-09-14 19:54:18] ##     CONFIG.SI_DATA_WIDTH {64} \
+[2025-09-14 19:54:18] ##     CONFIG.SI_ID_WIDTH {16} \
+[2025-09-14 19:54:18] ##   ] $axi_dwidth_converter_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: axi_tieoff_master_0, and set properties
+[2025-09-14 19:54:18] ##   set block_name axi_tieoff_master
+[2025-09-14 19:54:18] ##   set block_cell_name axi_tieoff_master_0
+[2025-09-14 19:54:18] ##   if { [catch {set axi_tieoff_master_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+[2025-09-14 19:54:18] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 19:54:18] ##      return 1
+[2025-09-14 19:54:18] ##    } elseif { $axi_tieoff_master_0 eq "" } {
+[2025-09-14 19:54:18] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 19:54:18] ##      return 1
+[2025-09-14 19:54:18] ##    }
+[2025-09-14 19:54:18] ##   
+[2025-09-14 19:54:18] ##   # Create instance: clk_wiz_0, and set properties
+[2025-09-14 19:54:18] ##   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.CLKOUT1_REQUESTED_OUT_FREQ $firesim_freq \
+[2025-09-14 19:54:18] ##     CONFIG.USE_LOCKED {false} \
+[2025-09-14 19:54:18] ##   ] $clk_wiz_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: ddr4_0, and set properties
+[2025-09-14 19:54:18] ##   set ddr4_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ddr4:2.2 ddr4_0 ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ {100} \
+[2025-09-14 19:54:18] ##     CONFIG.C0.DDR4_AUTO_AP_COL_A3 {true} \
+[2025-09-14 19:54:18] ##     CONFIG.C0.DDR4_AxiAddressWidth {34} \
+[2025-09-14 19:54:18] ##     CONFIG.C0.DDR4_EN_PARITY {true} \
+[2025-09-14 19:54:18] ##     CONFIG.C0.DDR4_MCS_ECC {false} \
+[2025-09-14 19:54:18] ##     CONFIG.C0.DDR4_Mem_Add_Map {ROW_COLUMN_BANK_INTLV} \
+[2025-09-14 19:54:18] ##     CONFIG.C0_CLOCK_BOARD_INTERFACE {default_300mhz_clk0} \
+[2025-09-14 19:54:18] ##     CONFIG.C0_DDR4_BOARD_INTERFACE {ddr4_sdram_c0} \
+[2025-09-14 19:54:18] ##     CONFIG.Debug_Signal {Disable} \
+[2025-09-14 19:54:18] ##     CONFIG.RESET_BOARD_INTERFACE {resetn} \
+[2025-09-14 19:54:18] ##   ] $ddr4_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: firesim_wrapper_0, and set properties
+[2025-09-14 19:54:18] ##   set block_name firesim_wrapper
+[2025-09-14 19:54:18] ##   set block_cell_name firesim_wrapper_0
+[2025-09-14 19:54:18] ##   if { [catch {set firesim_wrapper_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+[2025-09-14 19:54:18] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 19:54:18] ##      return 1
+[2025-09-14 19:54:18] ##    } elseif { $firesim_wrapper_0 eq "" } {
+[2025-09-14 19:54:18] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 19:54:18] ##      return 1
+[2025-09-14 19:54:18] ##    }
+[2025-09-14 19:54:18] ##   
+[2025-09-14 19:54:18] ##   # Create instance: proc_sys_reset_0, and set properties
+[2025-09-14 19:54:18] ##   set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: proc_sys_reset_1, and set properties
+[2025-09-14 19:54:18] ##   set proc_sys_reset_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1 ]
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: resetn_inv_0, and set properties
+[2025-09-14 19:54:18] ##   set resetn_inv_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 resetn_inv_0 ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.C_OPERATION {not} \
+[2025-09-14 19:54:18] ##     CONFIG.C_SIZE {1} \
+[2025-09-14 19:54:18] ##   ] $resetn_inv_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: util_ds_buf, and set properties
+[2025-09-14 19:54:18] ##   set util_ds_buf [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.DIFF_CLK_IN_BOARD_INTERFACE {pcie_refclk} \
+[2025-09-14 19:54:18] ##     CONFIG.USE_BOARD_FLOW {true} \
+[2025-09-14 19:54:18] ##   ] $util_ds_buf
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: xdma_0, and set properties
+[2025-09-14 19:54:18] ##   set xdma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xdma:4.1 xdma_0 ]
+[2025-09-14 19:54:18] ##   set_property -dict [list \
+[2025-09-14 19:54:18] ##     CONFIG.PCIE_BOARD_INTERFACE {pci_express_x16} \
+[2025-09-14 19:54:18] ##     CONFIG.SYS_RST_N_BOARD_INTERFACE {pcie_perstn} \
+[2025-09-14 19:54:18] ##     CONFIG.axilite_master_en {true} \
+[2025-09-14 19:54:18] ##     CONFIG.axilite_master_size {32} \
+[2025-09-14 19:54:18] ##     CONFIG.xdma_axi_intf_mm {AXI_Memory_Mapped} \
+[2025-09-14 19:54:18] ##     CONFIG.xdma_rnum_chnl {4} \
+[2025-09-14 19:54:18] ##     CONFIG.xdma_wnum_chnl {4} \
+[2025-09-14 19:54:18] ##   ] $xdma_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create instance: xlconstant_0, and set properties
+[2025-09-14 19:54:18] ##   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+[2025-09-14 19:54:18] ##   set_property CONFIG.CONST_VAL {0} $xlconstant_0
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create interface connections
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net axi_clock_converter_0_M_AXI [get_bd_intf_pins axi_clock_converter_0/M_AXI] [get_bd_intf_pins firesim_wrapper_0/S_AXI_DMA]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net axi_clock_converter_1_M_AXI [get_bd_intf_pins axi_clock_converter_1/M_AXI] [get_bd_intf_pins firesim_wrapper_0/S_AXI_CTRL]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net axi_dwidth_converter_0_M_AXI [get_bd_intf_pins axi_dwidth_converter_0/M_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net axi_tieoff_master_0_TIEOFF_M_AXI_CTRL_0 [get_bd_intf_pins axi_tieoff_master_0/TIEOFF_M_AXI_CTRL_0] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI_CTRL]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net ddr4_0_C0_DDR4 [get_bd_intf_ports ddr4_sdram_c0] [get_bd_intf_pins ddr4_0/C0_DDR4]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net default_300mhz_clk0_1 [get_bd_intf_ports default_300mhz_clk0] [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net firesim_wrapper_0_M_AXI_DDR0 [get_bd_intf_pins axi_dwidth_converter_0/S_AXI] [get_bd_intf_pins firesim_wrapper_0/M_AXI_DDR0]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net pcie_refclk_1 [get_bd_intf_ports pcie_refclk] [get_bd_intf_pins util_ds_buf/CLK_IN_D]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net xdma_0_M_AXI [get_bd_intf_pins axi_clock_converter_0/S_AXI] [get_bd_intf_pins xdma_0/M_AXI]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net xdma_0_M_AXI_LITE [get_bd_intf_pins axi_clock_converter_1/S_AXI] [get_bd_intf_pins xdma_0/M_AXI_LITE]
+[2025-09-14 19:54:18] ##   connect_bd_intf_net -intf_net xdma_0_pcie_mgt [get_bd_intf_ports pci_express_x16] [get_bd_intf_pins xdma_0/pcie_mgt]
+[2025-09-14 19:54:18] ## 
+[2025-09-14 19:54:18] ##   # Create port connections
+[2025-09-14 19:54:18] ##   connect_bd_net -net ddr4_0_c0_ddr4_ui_clk [get_bd_pins axi_dwidth_converter_0/m_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+[2025-09-14 19:54:18] ##   connect_bd_net -net pcie_perstn_1 [get_bd_ports pcie_perstn] [get_bd_pins xdma_0/sys_rst_n]
+[2025-09-14 19:54:19] ##   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_clock_converter_0/m_axi_aresetn] [get_bd_pins axi_clock_converter_1/m_axi_aresetn] [get_bd_pins axi_dwidth_converter_0/s_axi_aresetn] [get_bd_pins firesim_wrapper_0/sys_reset_n] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
+[2025-09-14 19:54:19] ##   connect_bd_net -net resetn_1 [get_bd_ports resetn] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins proc_sys_reset_1/ext_reset_in] [get_bd_pins resetn_inv_0/Op1]
+[2025-09-14 19:54:19] ##   connect_bd_net -net resetn_inv_0_Res [get_bd_pins clk_wiz_0/reset] [get_bd_pins ddr4_0/sys_rst] [get_bd_pins resetn_inv_0/Res]
+[2025-09-14 19:54:19] ##   connect_bd_net -net rst_ddr4_0_300M_interconnect_aresetn [get_bd_pins axi_dwidth_converter_0/m_axi_aresetn] [get_bd_pins ddr4_0/c0_ddr4_aresetn] [get_bd_pins proc_sys_reset_1/interconnect_aresetn]
+[2025-09-14 19:54:19] ##   connect_bd_net -net sys_clk_30 [get_bd_pins axi_clock_converter_0/m_axi_aclk] [get_bd_pins axi_clock_converter_1/m_axi_aclk] [get_bd_pins axi_dwidth_converter_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins firesim_wrapper_0/sys_clk_30] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+[2025-09-14 19:54:19] ##   connect_bd_net -net util_ds_buf_IBUF_DS_ODIV2 [get_bd_pins util_ds_buf/IBUF_DS_ODIV2] [get_bd_pins xdma_0/sys_clk]
+[2025-09-14 19:54:19] ##   connect_bd_net -net util_ds_buf_IBUF_OUT [get_bd_pins util_ds_buf/IBUF_OUT] [get_bd_pins xdma_0/sys_clk_gt]
+[2025-09-14 19:54:19] ##   connect_bd_net -net xdma_0_axi_aclk [get_bd_pins axi_clock_converter_0/s_axi_aclk] [get_bd_pins axi_clock_converter_1/s_axi_aclk] [get_bd_pins xdma_0/axi_aclk]
+[2025-09-14 19:54:19] ##   connect_bd_net -net xdma_0_axi_aresetn [get_bd_pins axi_clock_converter_0/s_axi_aresetn] [get_bd_pins axi_clock_converter_1/s_axi_aresetn] [get_bd_pins xdma_0/axi_aresetn]
+[2025-09-14 19:54:19] ##   connect_bd_net -net xlconstant_0_dout [get_bd_pins xdma_0/usr_irq_req] [get_bd_pins xlconstant_0/dout]
+[2025-09-14 19:54:19] ## 
+[2025-09-14 19:54:19] ##   # Create address segments
+[2025-09-14 19:54:19] ## 
+[2025-09-14 19:54:19] ##   # Restore current instance
+[2025-09-14 19:54:19] ##   current_bd_instance $oldCurInst
+[2025-09-14 19:54:19] ## 
+[2025-09-14 19:54:19] ##   validate_bd_design
+[2025-09-14 19:54:19] ##   save_bd_design
+[2025-09-14 19:54:19] ## }
+[2025-09-14 19:54:19] ## create_root_design "" $desired_host_frequency
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-5107] Inferred bus interface 'TIEOFF_M_AXI_CTRL_0' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-5107] Inferred bus interface 'TIEOFF_M_AXI_CTRL_0' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ADDR_WIDTH' with value '32'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ARUSER_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'AWUSER_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'BUSER_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'DATA_WIDTH' with value '32'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_BRESP' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_BURST' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_CACHE' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_LOCK' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_PROT' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_QOS' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_REGION' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_RRESP' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_WSTRB' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ID_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'MAX_BURST_LENGTH' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_READ_THREADS' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_WRITE_THREADS' with value '1'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'FREQ_HZ' with value '300000000'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'PHASE' with value '0.0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'RUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'RUSER_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'WUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'WUSER_WIDTH' with value '0'.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-7067] Note that bus interface 'TIEOFF_M_AXI_CTRL_0' has a fixed FREQ_HZ of '300000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-234] Refreshing IP repositories
+[2025-09-14 19:54:19] INFO: [IP_Flow 19-1704] No user IP repositories specified
+[2025-09-14 19:54:37] create_bd_cell: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 3066.293 ; gain = 1144.914 ; free physical = 148020 ; free virtual = 152766
+[2025-09-14 19:54:38] INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e

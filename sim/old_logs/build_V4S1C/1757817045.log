@@ -1,0 +1,695 @@
+[2025-09-14 04:30:45] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-09-14 04:30:53] make: Nothing to be done for 'driver'.
+[2025-09-14 04:30:53] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250 && vivado -mode batch -source ./scripts/main.tcl
+[2025-09-14 04:31:01] 
+[2025-09-14 04:31:01] ****** Vivado v2022.2 (64-bit)
+[2025-09-14 04:31:01]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-14 04:31:01]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-14 04:31:01]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-14 04:31:01] 
+[2025-09-14 04:31:01] source ./scripts/main.tcl
+[2025-09-14 04:31:01] # set root_dir [pwd]
+[2025-09-14 04:31:01] # set vivado_version [version -short]
+[2025-09-14 04:31:01] # proc retrieveVersionedFile {filename version} {
+[2025-09-14 04:31:01] #   set first [file rootname $filename]
+[2025-09-14 04:31:01] #   set last [file extension $filename]
+[2025-09-14 04:31:01] #   if {[file exists ${first}_${version}${last}]} {
+[2025-09-14 04:31:01] #     return ${first}_${version}${last}
+[2025-09-14 04:31:01] #   }
+[2025-09-14 04:31:01] #   return $filename
+[2025-09-14 04:31:01] # }
+[2025-09-14 04:31:01] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/platform_env.tcl $vivado_version]]]} {
+[2025-09-14 04:31:01] #     puts "ERROR: could not find $sourceFile"
+[2025-09-14 04:31:01] #     exit 1
+[2025-09-14 04:31:01] # }
+[2025-09-14 04:31:01] # source $sourceFile
+[2025-09-14 04:31:01] ## set jobs 12
+[2025-09-14 04:31:01] ## set board_part xilinx.com:au250:part0:1.3
+[2025-09-14 04:31:01] ## set part xcu250-figd2104-2L-e
+[2025-09-14 04:31:01] # foreach path [list ${root_dir}/vivado_proj/firesim.bit] {
+[2025-09-14 04:31:01] #     if {[file exists ${path}]} {
+[2025-09-14 04:31:01] #         file delete -force -- ${path}
+[2025-09-14 04:31:01] #     }
+[2025-09-14 04:31:01] # }
+[2025-09-14 04:31:01] # create_project -force firesim ${root_dir}/vivado_proj -part $part
+[2025-09-14 04:31:07] create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1719.449 ; gain = 95.961 ; free physical = 147550 ; free virtual = 154354
+[2025-09-14 04:31:07] # set_property board_part $board_part [current_project]
+[2025-09-14 04:31:07] # foreach addFile [list ${root_dir}/design/axi_tieoff_master.v ${root_dir}/design/firesim_wrapper.v ${root_dir}/design/firesim_top.sv ${root_dir}/design/firesim_defines.vh] {
+[2025-09-14 04:31:07] #   set addFile [retrieveVersionedFile $addFile $vivado_version]
+[2025-09-14 04:31:07] #   if {![file exists $addFile]} {
+[2025-09-14 04:31:07] #     puts "ERROR: could not find file $addFile"
+[2025-09-14 04:31:07] #     exit 1
+[2025-09-14 04:31:07] #   }
+[2025-09-14 04:31:07] #   add_files $addFile
+[2025-09-14 04:31:07] #   if {[file extension $addFile] == ".vh"} {
+[2025-09-14 04:31:07] #     set_property IS_GLOBAL_INCLUDE 1 [get_files $addFile]
+[2025-09-14 04:31:07] #   }
+[2025-09-14 04:31:07] # }
+[2025-09-14 04:31:07] # if {[file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/firesim_env.tcl $vivado_version]]]} {
+[2025-09-14 04:31:07] #   source $sourceFile
+[2025-09-14 04:31:07] # }
+[2025-09-14 04:31:07] ## set desired_host_frequency 25
+[2025-09-14 04:31:07] ## set strategy "TIMING"
+[2025-09-14 04:31:07] # if {![file exists [set sourceFile [retrieveVersionedFile ${root_dir}/scripts/create_bd.tcl $vivado_version]]]} {
+[2025-09-14 04:31:07] #   puts "ERROR: could not find $sourceFile"
+[2025-09-14 04:31:07] #   exit 1
+[2025-09-14 04:31:07] # }
+[2025-09-14 04:31:07] # source $sourceFile
+[2025-09-14 04:31:07] ## namespace eval _tcl {
+[2025-09-14 04:31:07] ## proc get_script_folder {} {
+[2025-09-14 04:31:07] ##    set script_path [file normalize [info script]]
+[2025-09-14 04:31:07] ##    set script_folder [file dirname $script_path]
+[2025-09-14 04:31:07] ##    return $script_folder
+[2025-09-14 04:31:07] ## }
+[2025-09-14 04:31:07] ## }
+[2025-09-14 04:31:07] ## variable script_folder
+[2025-09-14 04:31:07] ## set script_folder [_tcl::get_script_folder]
+[2025-09-14 04:31:07] ## set scripts_vivado_version 2022.2
+[2025-09-14 04:31:07] ## set current_vivado_version [version -short]
+[2025-09-14 04:31:07] ## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+[2025-09-14 04:31:07] ##    puts ""
+[2025-09-14 04:31:07] ##    catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ##    return 1
+[2025-09-14 04:31:07] ## }
+[2025-09-14 04:31:07] ## variable design_name
+[2025-09-14 04:31:07] ## set design_name design_1
+[2025-09-14 04:31:07] ## set errMsg ""
+[2025-09-14 04:31:07] ## set nRet 0
+[2025-09-14 04:31:07] ## set cur_design [current_bd_design -quiet]
+[2025-09-14 04:31:07] ## set list_cells [get_bd_cells -quiet]
+[2025-09-14 04:31:07] ## if { ${design_name} eq "" } {
+[2025-09-14 04:31:07] ##    # USE CASES:
+[2025-09-14 04:31:07] ##    #    1) Design_name not set
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ##    set errMsg "Please set the variable <design_name> to a non-empty value."
+[2025-09-14 04:31:07] ##    set nRet 1
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ## } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+[2025-09-14 04:31:07] ##    # USE CASES:
+[2025-09-14 04:31:07] ##    #    2): Current design opened AND is empty AND names same.
+[2025-09-14 04:31:07] ##    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+[2025-09-14 04:31:07] ##    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ##    if { $cur_design ne $design_name } {
+[2025-09-14 04:31:07] ##       common::send_gid_msg -ssname BD::TCL -id 2001 -severity "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+[2025-09-14 04:31:07] ##       set design_name [get_property NAME $cur_design]
+[2025-09-14 04:31:07] ##    }
+[2025-09-14 04:31:07] ##    common::send_gid_msg -ssname BD::TCL -id 2002 -severity "INFO" "Constructing design in IPI design <$cur_design>..."
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ## } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+[2025-09-14 04:31:07] ##    # USE CASES:
+[2025-09-14 04:31:07] ##    #    5) Current design opened AND has components AND same names.
+[2025-09-14 04:31:07] ## 
+[2025-09-14 04:31:07] ##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+[2025-09-14 04:31:07] ##    set nRet 1
+[2025-09-14 04:31:07] ## } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+[2025-09-14 04:31:07] ##    # USE CASES: 
+[2025-09-14 04:31:08] ##    #    6) Current opened design, has components, but diff names, design_name exists in project.
+[2025-09-14 04:31:08] ##    #    7) No opened design, design_name exists in project.
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+[2025-09-14 04:31:08] ##    set nRet 2
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ## } else {
+[2025-09-14 04:31:08] ##    # USE CASES:
+[2025-09-14 04:31:08] ##    #    8) No opened design, design_name not in project.
+[2025-09-14 04:31:08] ##    #    9) Current opened design, has components, but diff names, design_name not in project.
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    common::send_gid_msg -ssname BD::TCL -id 2003 -severity "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    create_bd_design $design_name
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    common::send_gid_msg -ssname BD::TCL -id 2004 -severity "INFO" "Making design <$design_name> as current_bd_design."
+[2025-09-14 04:31:08] ##    current_bd_design $design_name
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ## }
+[2025-09-14 04:31:08] INFO: [BD::TCL 103-2003] Currently there is no design <design_1> in project, so creating one...
+[2025-09-14 04:31:08] Wrote  : </cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.srcs/sources_1/bd/design_1/design_1.bd> 
+[2025-09-14 04:31:08] INFO: [BD::TCL 103-2004] Making design <design_1> as current_bd_design.
+[2025-09-14 04:31:08] ## common::send_gid_msg -ssname BD::TCL -id 2005 -severity "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+[2025-09-14 04:31:08] INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "design_1".
+[2025-09-14 04:31:08] ## if { $nRet != 0 } {
+[2025-09-14 04:31:08] ##    catch {common::send_gid_msg -ssname BD::TCL -id 2006 -severity "ERROR" $errMsg}
+[2025-09-14 04:31:08] ##    return $nRet
+[2025-09-14 04:31:08] ## }
+[2025-09-14 04:31:08] ## set bCheckIPsPassed 1
+[2025-09-14 04:31:08] ## set bCheckIPs 1
+[2025-09-14 04:31:08] ## if { $bCheckIPs == 1 } {
+[2025-09-14 04:31:08] ##    set list_check_ips "\ 
+[2025-09-14 04:31:08] ## xilinx.com:ip:axi_clock_converter:2.1\
+[2025-09-14 04:31:08] ## xilinx.com:ip:axi_dwidth_converter:2.1\
+[2025-09-14 04:31:08] ## xilinx.com:ip:clk_wiz:6.0\
+[2025-09-14 04:31:08] ## xilinx.com:ip:ddr4:2.2\
+[2025-09-14 04:31:08] ## xilinx.com:ip:proc_sys_reset:5.0\
+[2025-09-14 04:31:08] ## xilinx.com:ip:util_vector_logic:2.0\
+[2025-09-14 04:31:08] ## xilinx.com:ip:util_ds_buf:2.2\
+[2025-09-14 04:31:08] ## xilinx.com:ip:xdma:4.1\
+[2025-09-14 04:31:08] ## xilinx.com:ip:xlconstant:1.1\
+[2025-09-14 04:31:08] ## "
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    set list_ips_missing ""
+[2025-09-14 04:31:08] ##    common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    foreach ip_vlnv $list_check_ips {
+[2025-09-14 04:31:08] ##       set ip_obj [get_ipdefs -all $ip_vlnv]
+[2025-09-14 04:31:08] ##       if { $ip_obj eq "" } {
+[2025-09-14 04:31:08] ##          lappend list_ips_missing $ip_vlnv
+[2025-09-14 04:31:08] ##       }
+[2025-09-14 04:31:08] ##    }
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    if { $list_ips_missing ne "" } {
+[2025-09-14 04:31:08] ##       catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+[2025-09-14 04:31:08] ##       set bCheckIPsPassed 0
+[2025-09-14 04:31:08] ##    }
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ## }
+[2025-09-14 04:31:08] INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+[2025-09-14 04:31:08] xilinx.com:ip:axi_clock_converter:2.1 xilinx.com:ip:axi_dwidth_converter:2.1 xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:ddr4:2.2 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:util_vector_logic:2.0 xilinx.com:ip:util_ds_buf:2.2 xilinx.com:ip:xdma:4.1 xilinx.com:ip:xlconstant:1.1  .
+[2025-09-14 04:31:08] ## set bCheckModules 1
+[2025-09-14 04:31:08] ## if { $bCheckModules == 1 } {
+[2025-09-14 04:31:08] ##    set list_check_mods "\ 
+[2025-09-14 04:31:08] ## axi_tieoff_master\
+[2025-09-14 04:31:08] ## firesim_wrapper\
+[2025-09-14 04:31:08] ## "
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    set list_mods_missing ""
+[2025-09-14 04:31:08] ##    common::send_gid_msg -ssname BD::TCL -id 2020 -severity "INFO" "Checking if the following modules exist in the project's sources: $list_check_mods ."
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    foreach mod_vlnv $list_check_mods {
+[2025-09-14 04:31:08] ##       if { [can_resolve_reference $mod_vlnv] == 0 } {
+[2025-09-14 04:31:08] ##          lappend list_mods_missing $mod_vlnv
+[2025-09-14 04:31:08] ##       }
+[2025-09-14 04:31:08] ##    }
+[2025-09-14 04:31:08] ## 
+[2025-09-14 04:31:08] ##    if { $list_mods_missing ne "" } {
+[2025-09-14 04:31:08] ##       catch {common::send_gid_msg -ssname BD::TCL -id 2021 -severity "ERROR" "The following module(s) are not found in the project: $list_mods_missing" }
+[2025-09-14 04:31:08] ##       common::send_gid_msg -ssname BD::TCL -id 2022 -severity "INFO" "Please add source files for the missing module(s) above."
+[2025-09-14 04:31:08] ##       set bCheckIPsPassed 0
+[2025-09-14 04:31:08] ##    }
+[2025-09-14 04:31:08] ## }
+[2025-09-14 04:31:08] INFO: [BD::TCL 103-2020] Checking if the following modules exist in the project's sources:  
+[2025-09-14 04:31:08] axi_tieoff_master firesim_wrapper  .
+[2025-09-14 04:31:14] can_resolve_reference: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1839.125 ; gain = 8.004 ; free physical = 147564 ; free virtual = 154370
+[2025-09-14 04:31:14] ## if { $bCheckIPsPassed != 1 } {
+[2025-09-14 04:31:14] ##   common::send_gid_msg -ssname BD::TCL -id 2023 -severity "WARNING" "Will not continue with creation of design due to the error(s) above."
+[2025-09-14 04:31:14] ##   return 3
+[2025-09-14 04:31:14] ## }
+[2025-09-14 04:31:14] ## proc create_root_design { parentCell firesim_freq } {
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   variable script_folder
+[2025-09-14 04:31:14] ##   variable design_name
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   if { $parentCell eq "" } {
+[2025-09-14 04:31:14] ##      set parentCell [get_bd_cells /]
+[2025-09-14 04:31:14] ##   }
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   # Get object for parentCell
+[2025-09-14 04:31:14] ##   set parentObj [get_bd_cells $parentCell]
+[2025-09-14 04:31:14] ##   if { $parentObj == "" } {
+[2025-09-14 04:31:14] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+[2025-09-14 04:31:14] ##      return
+[2025-09-14 04:31:14] ##   }
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   # Make sure parentObj is hier blk
+[2025-09-14 04:31:14] ##   set parentType [get_property TYPE $parentObj]
+[2025-09-14 04:31:14] ##   if { $parentType ne "hier" } {
+[2025-09-14 04:31:14] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+[2025-09-14 04:31:14] ##      return
+[2025-09-14 04:31:14] ##   }
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   # Save current instance; Restore later
+[2025-09-14 04:31:14] ##   set oldCurInst [current_bd_instance .]
+[2025-09-14 04:31:14] ## 
+[2025-09-14 04:31:14] ##   # Set parent object as current
+[2025-09-14 04:31:15] ##   current_bd_instance $parentObj
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create interface ports
+[2025-09-14 04:31:15] ##   set ddr4_sdram_c0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddr4_rtl:1.0 ddr4_sdram_c0 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   set default_300mhz_clk0 [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 default_300mhz_clk0 ]
+[2025-09-14 04:31:15] ##   set_property -dict [ list \
+[2025-09-14 04:31:15] ##    CONFIG.FREQ_HZ {300000000} \
+[2025-09-14 04:31:15] ##    ] $default_300mhz_clk0
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   set pci_express_x16 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:pcie_7x_mgt_rtl:1.0 pci_express_x16 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   set pcie_refclk [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 pcie_refclk ]
+[2025-09-14 04:31:15] ##   set_property -dict [ list \
+[2025-09-14 04:31:15] ##    CONFIG.FREQ_HZ {100000000} \
+[2025-09-14 04:31:15] ##    ] $pcie_refclk
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create ports
+[2025-09-14 04:31:15] ##   set pcie_perstn [ create_bd_port -dir I -type rst pcie_perstn ]
+[2025-09-14 04:31:15] ##   set_property -dict [ list \
+[2025-09-14 04:31:15] ##    CONFIG.POLARITY {ACTIVE_LOW} \
+[2025-09-14 04:31:15] ##  ] $pcie_perstn
+[2025-09-14 04:31:15] ##   set resetn [ create_bd_port -dir I -type rst resetn ]
+[2025-09-14 04:31:15] ##   set_property -dict [ list \
+[2025-09-14 04:31:15] ##    CONFIG.POLARITY {ACTIVE_LOW} \
+[2025-09-14 04:31:15] ##  ] $resetn
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: axi_clock_converter_0, and set properties
+[2025-09-14 04:31:15] ##   set axi_clock_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 axi_clock_converter_0 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: axi_clock_converter_1, and set properties
+[2025-09-14 04:31:15] ##   set axi_clock_converter_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_clock_converter:2.1 axi_clock_converter_1 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: axi_dwidth_converter_0, and set properties
+[2025-09-14 04:31:15] ##   set axi_dwidth_converter_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dwidth_converter:2.1 axi_dwidth_converter_0 ]
+[2025-09-14 04:31:15] ##   set_property -dict [list \
+[2025-09-14 04:31:15] ##     CONFIG.ACLK_ASYNC {1} \
+[2025-09-14 04:31:15] ##     CONFIG.FIFO_MODE {2} \
+[2025-09-14 04:31:15] ##     CONFIG.MI_DATA_WIDTH {512} \
+[2025-09-14 04:31:15] ##     CONFIG.SI_DATA_WIDTH {64} \
+[2025-09-14 04:31:15] ##     CONFIG.SI_ID_WIDTH {16} \
+[2025-09-14 04:31:15] ##   ] $axi_dwidth_converter_0
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: axi_tieoff_master_0, and set properties
+[2025-09-14 04:31:15] ##   set block_name axi_tieoff_master
+[2025-09-14 04:31:15] ##   set block_cell_name axi_tieoff_master_0
+[2025-09-14 04:31:15] ##   if { [catch {set axi_tieoff_master_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+[2025-09-14 04:31:15] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 04:31:15] ##      return 1
+[2025-09-14 04:31:15] ##    } elseif { $axi_tieoff_master_0 eq "" } {
+[2025-09-14 04:31:15] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 04:31:15] ##      return 1
+[2025-09-14 04:31:15] ##    }
+[2025-09-14 04:31:15] ##   
+[2025-09-14 04:31:15] ##   # Create instance: clk_wiz_0, and set properties
+[2025-09-14 04:31:15] ##   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+[2025-09-14 04:31:15] ##   set_property -dict [list \
+[2025-09-14 04:31:15] ##     CONFIG.CLKOUT1_REQUESTED_OUT_FREQ $firesim_freq \
+[2025-09-14 04:31:15] ##     CONFIG.USE_LOCKED {false} \
+[2025-09-14 04:31:15] ##   ] $clk_wiz_0
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: ddr4_0, and set properties
+[2025-09-14 04:31:15] ##   set ddr4_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ddr4:2.2 ddr4_0 ]
+[2025-09-14 04:31:15] ##   set_property -dict [list \
+[2025-09-14 04:31:15] ##     CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ {100} \
+[2025-09-14 04:31:15] ##     CONFIG.C0.DDR4_AUTO_AP_COL_A3 {true} \
+[2025-09-14 04:31:15] ##     CONFIG.C0.DDR4_AxiAddressWidth {34} \
+[2025-09-14 04:31:15] ##     CONFIG.C0.DDR4_EN_PARITY {true} \
+[2025-09-14 04:31:15] ##     CONFIG.C0.DDR4_MCS_ECC {false} \
+[2025-09-14 04:31:15] ##     CONFIG.C0.DDR4_Mem_Add_Map {ROW_COLUMN_BANK_INTLV} \
+[2025-09-14 04:31:15] ##     CONFIG.C0_CLOCK_BOARD_INTERFACE {default_300mhz_clk0} \
+[2025-09-14 04:31:15] ##     CONFIG.C0_DDR4_BOARD_INTERFACE {ddr4_sdram_c0} \
+[2025-09-14 04:31:15] ##     CONFIG.Debug_Signal {Disable} \
+[2025-09-14 04:31:15] ##     CONFIG.RESET_BOARD_INTERFACE {resetn} \
+[2025-09-14 04:31:15] ##   ] $ddr4_0
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: firesim_wrapper_0, and set properties
+[2025-09-14 04:31:15] ##   set block_name firesim_wrapper
+[2025-09-14 04:31:15] ##   set block_cell_name firesim_wrapper_0
+[2025-09-14 04:31:15] ##   if { [catch {set firesim_wrapper_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+[2025-09-14 04:31:15] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 04:31:15] ##      return 1
+[2025-09-14 04:31:15] ##    } elseif { $firesim_wrapper_0 eq "" } {
+[2025-09-14 04:31:15] ##      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+[2025-09-14 04:31:15] ##      return 1
+[2025-09-14 04:31:15] ##    }
+[2025-09-14 04:31:15] ##   
+[2025-09-14 04:31:15] ##   # Create instance: proc_sys_reset_0, and set properties
+[2025-09-14 04:31:15] ##   set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: proc_sys_reset_1, and set properties
+[2025-09-14 04:31:15] ##   set proc_sys_reset_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_1 ]
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: resetn_inv_0, and set properties
+[2025-09-14 04:31:15] ##   set resetn_inv_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 resetn_inv_0 ]
+[2025-09-14 04:31:15] ##   set_property -dict [list \
+[2025-09-14 04:31:15] ##     CONFIG.C_OPERATION {not} \
+[2025-09-14 04:31:15] ##     CONFIG.C_SIZE {1} \
+[2025-09-14 04:31:15] ##   ] $resetn_inv_0
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: util_ds_buf, and set properties
+[2025-09-14 04:31:15] ##   set util_ds_buf [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf ]
+[2025-09-14 04:31:15] ##   set_property -dict [list \
+[2025-09-14 04:31:15] ##     CONFIG.DIFF_CLK_IN_BOARD_INTERFACE {pcie_refclk} \
+[2025-09-14 04:31:15] ##     CONFIG.USE_BOARD_FLOW {true} \
+[2025-09-14 04:31:15] ##   ] $util_ds_buf
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ## 
+[2025-09-14 04:31:15] ##   # Create instance: xdma_0, and set properties
+[2025-09-14 04:31:15] ##   set xdma_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xdma:4.1 xdma_0 ]
+[2025-09-14 04:31:16] ##   set_property -dict [list \
+[2025-09-14 04:31:16] ##     CONFIG.PCIE_BOARD_INTERFACE {pci_express_x16} \
+[2025-09-14 04:31:16] ##     CONFIG.SYS_RST_N_BOARD_INTERFACE {pcie_perstn} \
+[2025-09-14 04:31:16] ##     CONFIG.axilite_master_en {true} \
+[2025-09-14 04:31:16] ##     CONFIG.axilite_master_size {32} \
+[2025-09-14 04:31:16] ##     CONFIG.xdma_axi_intf_mm {AXI_Memory_Mapped} \
+[2025-09-14 04:31:16] ##     CONFIG.xdma_rnum_chnl {4} \
+[2025-09-14 04:31:16] ##     CONFIG.xdma_wnum_chnl {4} \
+[2025-09-14 04:31:16] ##   ] $xdma_0
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   # Create instance: xlconstant_0, and set properties
+[2025-09-14 04:31:16] ##   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+[2025-09-14 04:31:16] ##   set_property CONFIG.CONST_VAL {0} $xlconstant_0
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   # Create interface connections
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net axi_clock_converter_0_M_AXI [get_bd_intf_pins axi_clock_converter_0/M_AXI] [get_bd_intf_pins firesim_wrapper_0/S_AXI_DMA]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net axi_clock_converter_1_M_AXI [get_bd_intf_pins axi_clock_converter_1/M_AXI] [get_bd_intf_pins firesim_wrapper_0/S_AXI_CTRL]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net axi_dwidth_converter_0_M_AXI [get_bd_intf_pins axi_dwidth_converter_0/M_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net axi_tieoff_master_0_TIEOFF_M_AXI_CTRL_0 [get_bd_intf_pins axi_tieoff_master_0/TIEOFF_M_AXI_CTRL_0] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI_CTRL]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net ddr4_0_C0_DDR4 [get_bd_intf_ports ddr4_sdram_c0] [get_bd_intf_pins ddr4_0/C0_DDR4]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net default_300mhz_clk0_1 [get_bd_intf_ports default_300mhz_clk0] [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net firesim_wrapper_0_M_AXI_DDR0 [get_bd_intf_pins axi_dwidth_converter_0/S_AXI] [get_bd_intf_pins firesim_wrapper_0/M_AXI_DDR0]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net pcie_refclk_1 [get_bd_intf_ports pcie_refclk] [get_bd_intf_pins util_ds_buf/CLK_IN_D]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net xdma_0_M_AXI [get_bd_intf_pins axi_clock_converter_0/S_AXI] [get_bd_intf_pins xdma_0/M_AXI]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net xdma_0_M_AXI_LITE [get_bd_intf_pins axi_clock_converter_1/S_AXI] [get_bd_intf_pins xdma_0/M_AXI_LITE]
+[2025-09-14 04:31:16] ##   connect_bd_intf_net -intf_net xdma_0_pcie_mgt [get_bd_intf_ports pci_express_x16] [get_bd_intf_pins xdma_0/pcie_mgt]
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   # Create port connections
+[2025-09-14 04:31:16] ##   connect_bd_net -net ddr4_0_c0_ddr4_ui_clk [get_bd_pins axi_dwidth_converter_0/m_axi_aclk] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins proc_sys_reset_1/slowest_sync_clk]
+[2025-09-14 04:31:16] ##   connect_bd_net -net pcie_perstn_1 [get_bd_ports pcie_perstn] [get_bd_pins xdma_0/sys_rst_n]
+[2025-09-14 04:31:16] ##   connect_bd_net -net proc_sys_reset_0_interconnect_aresetn [get_bd_pins axi_clock_converter_0/m_axi_aresetn] [get_bd_pins axi_clock_converter_1/m_axi_aresetn] [get_bd_pins axi_dwidth_converter_0/s_axi_aresetn] [get_bd_pins firesim_wrapper_0/sys_reset_n] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
+[2025-09-14 04:31:16] ##   connect_bd_net -net resetn_1 [get_bd_ports resetn] [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins proc_sys_reset_1/ext_reset_in] [get_bd_pins resetn_inv_0/Op1]
+[2025-09-14 04:31:16] ##   connect_bd_net -net resetn_inv_0_Res [get_bd_pins clk_wiz_0/reset] [get_bd_pins ddr4_0/sys_rst] [get_bd_pins resetn_inv_0/Res]
+[2025-09-14 04:31:16] ##   connect_bd_net -net rst_ddr4_0_300M_interconnect_aresetn [get_bd_pins axi_dwidth_converter_0/m_axi_aresetn] [get_bd_pins ddr4_0/c0_ddr4_aresetn] [get_bd_pins proc_sys_reset_1/interconnect_aresetn]
+[2025-09-14 04:31:16] ##   connect_bd_net -net sys_clk_30 [get_bd_pins axi_clock_converter_0/m_axi_aclk] [get_bd_pins axi_clock_converter_1/m_axi_aclk] [get_bd_pins axi_dwidth_converter_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins firesim_wrapper_0/sys_clk_30] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+[2025-09-14 04:31:16] ##   connect_bd_net -net util_ds_buf_IBUF_DS_ODIV2 [get_bd_pins util_ds_buf/IBUF_DS_ODIV2] [get_bd_pins xdma_0/sys_clk]
+[2025-09-14 04:31:16] ##   connect_bd_net -net util_ds_buf_IBUF_OUT [get_bd_pins util_ds_buf/IBUF_OUT] [get_bd_pins xdma_0/sys_clk_gt]
+[2025-09-14 04:31:16] ##   connect_bd_net -net xdma_0_axi_aclk [get_bd_pins axi_clock_converter_0/s_axi_aclk] [get_bd_pins axi_clock_converter_1/s_axi_aclk] [get_bd_pins xdma_0/axi_aclk]
+[2025-09-14 04:31:16] ##   connect_bd_net -net xdma_0_axi_aresetn [get_bd_pins axi_clock_converter_0/s_axi_aresetn] [get_bd_pins axi_clock_converter_1/s_axi_aresetn] [get_bd_pins xdma_0/axi_aresetn]
+[2025-09-14 04:31:16] ##   connect_bd_net -net xlconstant_0_dout [get_bd_pins xdma_0/usr_irq_req] [get_bd_pins xlconstant_0/dout]
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   # Create address segments
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   # Restore current instance
+[2025-09-14 04:31:16] ##   current_bd_instance $oldCurInst
+[2025-09-14 04:31:16] ## 
+[2025-09-14 04:31:16] ##   validate_bd_design
+[2025-09-14 04:31:16] ##   save_bd_design
+[2025-09-14 04:31:16] ## }
+[2025-09-14 04:31:16] ## create_root_design "" $desired_host_frequency
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-5107] Inferred bus interface 'TIEOFF_M_AXI_CTRL_0' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-5107] Inferred bus interface 'TIEOFF_M_AXI_CTRL_0' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ADDR_WIDTH' with value '32'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ARUSER_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'AWUSER_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'BUSER_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'DATA_WIDTH' with value '32'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_BRESP' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_BURST' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_CACHE' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_LOCK' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_PROT' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_QOS' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_REGION' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_RRESP' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'HAS_WSTRB' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'ID_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'MAX_BURST_LENGTH' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_READ_THREADS' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'NUM_WRITE_THREADS' with value '1'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'FREQ_HZ' with value '300000000'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'PHASE' with value '0.0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'RUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'RUSER_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'WUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-4728] Bus Interface 'TIEOFF_M_AXI_CTRL_0': Added interface parameter 'WUSER_WIDTH' with value '0'.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-7067] Note that bus interface 'TIEOFF_M_AXI_CTRL_0' has a fixed FREQ_HZ of '300000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-234] Refreshing IP repositories
+[2025-09-14 04:31:16] INFO: [IP_Flow 19-1704] No user IP repositories specified
+[2025-09-14 04:31:31] create_bd_cell: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 3025.945 ; gain = 1143.945 ; free physical = 146289 ; free virtual = 153095
+[2025-09-14 04:31:31] INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+[2025-09-14 04:31:59] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+[2025-09-14 04:32:00] create_bd_cell: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 3453.938 ; gain = 427.992 ; free physical = 144688 ; free virtual = 151473
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+[2025-09-14 04:32:06] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_CTRL' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_CTRL' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_DMA' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_DMA' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_DDR0' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_DDR0' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK.SYS_CLK_30' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK.SYS_CLK_30' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'RST.SYS_RESET_N' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-5107] Inferred bus interface 'RST.SYS_RESET_N' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'ADDR_WIDTH' with value '32'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'ARUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'AWUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'BUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'CLK_DOMAIN' with value 'design_1_clk_wiz_0_0_clk_out1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'DATA_WIDTH' with value '32'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_BRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_BURST' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_CACHE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_LOCK' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_PROT' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_QOS' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_REGION' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_RRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'HAS_WSTRB' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'ID_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'MAX_BURST_LENGTH' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'NUM_READ_OUTSTANDING' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'NUM_READ_THREADS' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'NUM_WRITE_THREADS' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'PHASE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'PROTOCOL' with value 'AXI4LITE'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'RUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'RUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'WUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_CTRL': Added interface parameter 'WUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'ADDR_WIDTH' with value '64'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'ARUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'AWUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'BUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'CLK_DOMAIN' with value 'design_1_clk_wiz_0_0_clk_out1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'DATA_WIDTH' with value '512'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_BRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_BURST' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_CACHE' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_LOCK' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_PROT' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_QOS' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_REGION' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_RRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'HAS_WSTRB' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'ID_WIDTH' with value '4'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'MAX_BURST_LENGTH' with value '256'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'NUM_READ_OUTSTANDING' with value '32'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'NUM_READ_THREADS' with value '4'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '16'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'NUM_WRITE_THREADS' with value '4'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'PHASE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'RUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'RUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'WUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'S_AXI_DMA': Added interface parameter 'WUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'ADDR_WIDTH' with value '34'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'ARUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'AWUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'BUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'CLK_DOMAIN' with value 'design_1_clk_wiz_0_0_clk_out1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'DATA_WIDTH' with value '64'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_BRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_BURST' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_CACHE' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_LOCK' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_PROT' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_QOS' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_REGION' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_RRESP' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'HAS_WSTRB' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'ID_WIDTH' with value '16'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'MAX_BURST_LENGTH' with value '256'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'NUM_READ_OUTSTANDING' with value '2'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'NUM_READ_THREADS' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'NUM_WRITE_OUTSTANDING' with value '2'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'NUM_WRITE_THREADS' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'PHASE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'PROTOCOL' with value 'AXI4'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'READ_WRITE_MODE' with value 'READ_WRITE'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'RUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'RUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'SUPPORTS_NARROW_BURST' with value '1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'WUSER_BITS_PER_BYTE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'M_AXI_DDR0': Added interface parameter 'WUSER_WIDTH' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'CLK.SYS_CLK_30': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXI_CTRL'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'CLK.SYS_CLK_30': Added interface parameter 'CLK_DOMAIN' with value 'design_1_clk_wiz_0_0_clk_out1'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'CLK.SYS_CLK_30': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'CLK.SYS_CLK_30': Added interface parameter 'PHASE' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'RST.SYS_RESET_N': Added interface parameter 'INSERT_VIP' with value '0'.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-4728] Bus Interface 'RST.SYS_RESET_N': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+[2025-09-14 04:32:08] WARNING: [IP_Flow 19-3157] Bus Interface 'RST.SYS_RESET_N': Bus parameter POLARITY is ACTIVE_LOW but port 'sys_reset_n' is not *resetn - please double check the POLARITY setting.
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-234] Refreshing IP repositories
+[2025-09-14 04:32:08] INFO: [IP_Flow 19-1704] No user IP repositories specified
+[2025-09-14 04:32:18] create_bd_cell: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3590.469 ; gain = 121.516 ; free physical = 143434 ; free virtual = 150205
+[2025-09-14 04:32:30] CRITICAL WARNING: [BD 41-1356] Slave segment </ddr4_0/C0_DDR4_MEMORY_MAP_CTRL/C0_REG> is not assigned into address space </axi_tieoff_master_0/TIEOFF_M_AXI_CTRL_0>. Please use Address Editor to either assign or exclude it.
+[2025-09-14 04:32:30] CRITICAL WARNING: [BD 41-1356] Slave segment </ddr4_0/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is not assigned into address space </firesim_wrapper_0/M_AXI_DDR0>. Please use Address Editor to either assign or exclude it.
+[2025-09-14 04:32:30] CRITICAL WARNING: [BD 41-1356] Slave segment </firesim_wrapper_0/S_AXI_DMA/reg0> is not assigned into address space </xdma_0/M_AXI>. Please use Address Editor to either assign or exclude it.
+[2025-09-14 04:32:30] CRITICAL WARNING: [BD 41-1356] Slave segment </firesim_wrapper_0/S_AXI_CTRL/reg0> is not assigned into address space </xdma_0/M_AXI_LITE>. Please use Address Editor to either assign or exclude it.
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+[2025-09-14 04:32:31] WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+[2025-09-14 04:32:35] INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+[2025-09-14 04:32:35] validate_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3599.547 ; gain = 9.078 ; free physical = 143375 ; free virtual = 150125
+[2025-09-14 04:32:35] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:32:35] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:32:36] Wrote  : </cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.srcs/sources_1/bd/design_1/design_1.bd> 
+[2025-09-14 04:32:36] # make_wrapper -files [get_files ${root_dir}/vivado_proj/firesim.srcs/sources_1/bd/design_1/design_1.bd] -top
+[2025-09-14 04:32:36] INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+[2025-09-14 04:32:36] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/synth/design_1.v
+[2025-09-14 04:32:36] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/sim/design_1.v
+[2025-09-14 04:32:36] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+[2025-09-14 04:32:36] # add_files -norecurse ${root_dir}/vivado_proj/firesim.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+[2025-09-14 04:32:36] # if {[file exists [set constrFile [retrieveVersionedFile ${root_dir}/design/firesim_synth.xdc $vivado_version]]]} {
+[2025-09-14 04:32:36] #     create_fileset -constrset synth
+[2025-09-14 04:32:36] #     add_files -fileset synth -norecurse $constrFile
+[2025-09-14 04:32:36] # }
+[2025-09-14 04:32:36] # if {[file exists [set constrFile [retrieveVersionedFile ${root_dir}/design/firesim_impl.xdc $vivado_version]]]} {
+[2025-09-14 04:32:36] #     create_fileset -constrset impl
+[2025-09-14 04:32:36] #     add_files -fileset impl -norecurse $constrFile
+[2025-09-14 04:32:36] # }
+[2025-09-14 04:32:36] # update_compile_order -fileset sources_1
+[2025-09-14 04:32:51] update_compile_order: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3719.609 ; gain = 120.062 ; free physical = 143230 ; free virtual = 149986
+[2025-09-14 04:32:51] # set_property top design_1_wrapper [current_fileset]
+[2025-09-14 04:32:51] # update_compile_order -fileset sources_1
+[2025-09-14 04:33:00] update_compile_order: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 3719.609 ; gain = 0.000 ; free physical = 143000 ; free virtual = 149750
+[2025-09-14 04:33:00] # if {[llength [get_filesets -quiet synth]]} {
+[2025-09-14 04:33:00] #     set_property constrset synth [get_runs synth_1]
+[2025-09-14 04:33:00] # }
+[2025-09-14 04:33:00] # if {[llength [get_filesets -quiet impl]]} {
+[2025-09-14 04:33:00] #     set_property constrset impl [get_runs impl_1]
+[2025-09-14 04:33:00] # }
+[2025-09-14 04:33:00] # foreach sourceFile [list ${root_dir}/scripts/synthesis.tcl ${root_dir}/scripts/implementation.tcl] {
+[2025-09-14 04:33:00] #   set sourceFile [retrieveVersionedFile $sourceFile $vivado_version]
+[2025-09-14 04:33:00] #   if {![file exists $sourceFile]} {
+[2025-09-14 04:33:00] #     puts "ERROR: could not find $sourceFile"
+[2025-09-14 04:33:00] #     exit 1
+[2025-09-14 04:33:00] #   }
+[2025-09-14 04:33:00] #   source $sourceFile
+[2025-09-14 04:33:00] # }
+[2025-09-14 04:33:00] ## variable synth_run [get_runs synth_1]
+[2025-09-14 04:33:00] ## reset_runs ${synth_run}
+[2025-09-14 04:33:00] ## launch_runs ${synth_run} -jobs ${jobs}
+[2025-09-14 04:33:00] INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+[2025-09-14 04:33:00] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/synth/design_1.v
+[2025-09-14 04:33:00] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/sim/design_1.v
+[2025-09-14 04:33:01] Verilog Output written to : /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+[2025-09-14 04:33:01] WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/ip/design_1_axi_clock_converter_0_0/design_1_axi_clock_converter_0_0_ooc.xdc'
+[2025-09-14 04:33:01] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+[2025-09-14 04:33:01] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+[2025-09-14 04:33:01] INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_clock_converter_0 .
+[2025-09-14 04:33:01] WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/ip/design_1_axi_clock_converter_1_0/design_1_axi_clock_converter_1_0_ooc.xdc'
+[2025-09-14 04:33:01] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+[2025-09-14 04:33:01] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+[2025-09-14 04:33:01] INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_clock_converter_1 .
+[2025-09-14 04:33:02] WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/ip/design_1_axi_dwidth_converter_0_0/design_1_axi_dwidth_converter_0_0_ooc.xdc'
+[2025-09-14 04:33:02] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+[2025-09-14 04:33:02] INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+[2025-09-14 04:33:02] INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dwidth_converter_0 .
+[2025-09-14 04:33:02] INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_tieoff_master_0 .
+[2025-09-14 04:33:04] INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+[2025-09-14 04:33:15] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:33:15] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:33:15] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:33:15] WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+[2025-09-14 04:33:16] Exporting to file /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/hw_handoff/design_1_ddr4_0_0_microblaze_mcs.hwh
+[2025-09-14 04:33:16] Generated Hardware Definition File /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/ip/design_1_ddr4_0_0/bd_0/synth/design_1_ddr4_0_0_microblaze_mcs.hwdef
+[2025-09-14 04:33:18] INFO: [BD 41-1029] Generation completed for the IP Integrator block ddr4_0 .
+[2025-09-14 04:33:18] INFO: [BD 41-1029] Generation completed for the IP Integrator block firesim_wrapper_0 .
+[2025-09-14 04:33:18] INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+[2025-09-14 04:33:18] INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+[2025-09-14 04:33:18] INFO: [BD 41-1029] Generation completed for the IP Integrator block resetn_inv_0 .
+[2025-09-14 04:33:19] INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf .
+[2025-09-14 04:33:34] INFO: [BD 41-1029] Generation completed for the IP Integrator block xdma_0 .
+[2025-09-14 04:33:35] INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+[2025-09-14 04:33:35] Exporting to file /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+[2025-09-14 04:33:35] Generated Hardware Definition File /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.gen/sources_1/bd/design_1/synth/design_1.hwdef
+[2025-09-14 04:33:35] WARNING: [BD 41-2265] Clock pin for protocol instance pin TIEOFF_M_AXI_CTRL_0 could not be determined. Make sure that ASSOCIATED_BUSIF and ASSOCIATED_RESET properties are set or propagated on clock pins of block /axi_tieoff_master_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_clock_converter_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_clock_converter_1_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_dwidth_converter_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_tieoff_master_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_clk_wiz_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_ddr4_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_firesim_wrapper_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_proc_sys_reset_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_proc_sys_reset_1_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_resetn_inv_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_util_ds_buf_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xdma_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_clock_converter_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_clock_converter_1_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_dwidth_converter_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_tieoff_master_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_util_ds_buf_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ddr4_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_firesim_wrapper_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xdma_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_1_0
+[2025-09-14 04:33:35] INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_resetn_inv_0_0
+[2025-09-14 04:33:50] WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[2025-09-14 04:33:59] [Sun Sep 14 04:33:59 2025] Launched design_1_clk_wiz_0_0_synth_1, design_1_axi_tieoff_master_0_0_synth_1, design_1_axi_dwidth_converter_0_0_synth_1, design_1_axi_clock_converter_1_0_synth_1, design_1_axi_clock_converter_0_0_synth_1, design_1_firesim_wrapper_0_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_proc_sys_reset_1_0_synth_1, design_1_resetn_inv_0_0_synth_1, design_1_xdma_0_0_synth_1, design_1_util_ds_buf_0_synth_1, design_1_ddr4_0_0_synth_1...
+[2025-09-14 04:33:59] Run output will be captured here:
+[2025-09-14 04:33:59] design_1_clk_wiz_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_axi_tieoff_master_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_axi_tieoff_master_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_axi_dwidth_converter_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_axi_dwidth_converter_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_axi_clock_converter_1_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_axi_clock_converter_1_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_axi_clock_converter_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_axi_clock_converter_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_firesim_wrapper_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_firesim_wrapper_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_proc_sys_reset_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_proc_sys_reset_1_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_proc_sys_reset_1_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_resetn_inv_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_resetn_inv_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_xdma_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_xdma_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_util_ds_buf_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_util_ds_buf_0_synth_1/runme.log
+[2025-09-14 04:33:59] design_1_ddr4_0_0_synth_1: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/design_1_ddr4_0_0_synth_1/runme.log
+[2025-09-14 04:33:59] [Sun Sep 14 04:33:59 2025] Launched synth_1...
+[2025-09-14 04:33:59] Run output will be captured here: /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV4S1C-BaseF1Config1Mem_F25MHz/u250/vivado_proj/firesim.runs/synth_1/runme.log
+[2025-09-14 04:33:59] launch_runs: Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 3855.672 ; gain = 136.062 ; free physical = 142766 ; free virtual = 149631
+[2025-09-14 04:33:59] ## wait_on_run ${synth_run}
+[2025-09-14 04:33:59] [Sun Sep 14 04:33:59 2025] Waiting for synth_1 to finish...
+[2025-09-14 05:02:36] 
+[2025-09-14 05:02:36] *** Running vivado
+[2025-09-14 05:02:37]     with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+[2025-09-14 05:02:37] 
+[2025-09-14 05:02:42] 
+[2025-09-14 05:02:42] ****** Vivado v2022.2 (64-bit)
+[2025-09-14 05:02:42]   **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+[2025-09-14 05:02:42]   **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+[2025-09-14 05:02:42]     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+[2025-09-14 05:02:42] 
+[2025-09-14 05:02:42] source design_1_wrapper.tcl -notrace
