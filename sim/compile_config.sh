@@ -14,8 +14,8 @@ config="$1"
 
 mkdir -p logs/build_$config
 {
-  echo "========== Building $config config =========="
+  echo "========== Compiling $config config =========="
   timestamp env BUILD_VORTEX=1 USE_SOFTWARE_SIMULATOR=0 USE_FPNEW=1 make driver PLATFORM=alveo ALVEO_PLATFORM=u250 PLATFORM_CONFIG=BaseF1Config1Mem_F25MHz TARGET_CONFIG=FireSim"$config" JAVA_HEAP_SIZE=128G
-} 2>&1 | tee -a "logs/build_$config/compile_$(date '%s').log"
+} 2>&1 | tee -a "logs/build_$config/compile_$(date +%s).log"
 
 
