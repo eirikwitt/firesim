@@ -1,0 +1,444 @@
+========== Building V2S4C config ==========
+[2025-11-08 13:17:07] Running with RISCV=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools
+[2025-11-08 13:17:13] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz
+[2025-11-08 13:17:13] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard && java -jar /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/rocket-chip/sbt-launch.jar  ";project firechip; runMain chipyard.Generator  --target-dir /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz --name firesim.firesim.FireSim.FireSimV2S4C --top-module firesim.firesim.FireSim --legacy-configs firesim.firesim:FireSimV2S4C"
+[2025-11-08 13:17:13] Picked up JAVA_TOOL_OPTIONS: -Xmx128G -Xss8M -Djava.io.tmpdir=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.java_tmp
+[2025-11-08 13:17:14] WARNING: A terminally deprecated method in java.lang.System has been called
+[2025-11-08 13:17:14] WARNING: System::setSecurityManager has been called by sbt.TrapExit$ (file:/cluster/home/eirikwit/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/run_2.12-1.5.5.jar)
+[2025-11-08 13:17:14] WARNING: Please consider reporting this to the maintainers of sbt.TrapExit$
+[2025-11-08 13:17:14] WARNING: System::setSecurityManager will be removed in a future release
+[2025-11-08 13:17:14] [info] welcome to sbt 1.5.5 (N/A Java 17.0.3-internal)
+[2025-11-08 13:17:15] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project/project
+[2025-11-08 13:17:16] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project
+[2025-11-08 13:17:16] [info] loading settings for project chipyard-build from plugins.sbt ...
+[2025-11-08 13:17:16] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project
+[2025-11-08 13:17:17] [info] loading settings for project chipyardRoot from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project hardfloat from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project rocketConfig from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project testchipip from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project constellation from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project icenet from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project hwacha from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project boom from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project cva6 from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project ibex from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project sodor from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project gemmini from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project tapeout from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project vortex from build.sbt ...
+[2025-11-08 13:17:17] [info] loading settings for project sim-build from plugins.sbt ...
+[2025-11-08 13:17:17] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/project
+[2025-11-08 13:17:18] [info] loading settings for project firesim from build.sbt ...
+[2025-11-08 13:17:18] [info] loading settings for project targetutils from build.sbt ...
+[2025-11-08 13:17:18] [info] loading settings for project midas from build.sbt ...
+[2025-11-08 13:17:18] [info] resolving key references (37744 settings) ...
+[2025-11-08 13:17:23] [info] set current project to chipyardRoot (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-11-08 13:17:24] [info] set current project to firechip (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-11-08 13:17:30] [info] running chipyard.Generator --target-dir /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz --name firesim.firesim.FireSim.FireSimV2S4C --top-module firesim.firesim.FireSim --legacy-configs firesim.firesim:FireSimV2S4C
+[2025-11-08 13:17:40] L2 InclusiveCache Client Map:
+[2025-11-08 13:17:40] 	0 <= serial-tl
+[2025-11-08 13:17:40] 	1 <= vortex-AXI4-mem-port ID#0
+[2025-11-08 13:17:40] 	2 <= vortex-AXI4-mem-port ID#1
+[2025-11-08 13:17:40] 	3 <= vortex-AXI4-mem-port ID#2
+[2025-11-08 13:17:40] 	4 <= vortex-AXI4-mem-port ID#3
+[2025-11-08 13:17:40] 	5 <= vortex-AXI4-mem-port ID#4
+[2025-11-08 13:17:40] 	6 <= vortex-AXI4-mem-port ID#5
+[2025-11-08 13:17:40] 	7 <= vortex-AXI4-mem-port ID#6
+[2025-11-08 13:17:40] 	8 <= vortex-AXI4-mem-port ID#7
+[2025-11-08 13:17:40] 
+[2025-11-08 13:17:41] make[1]: Entering directory '/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/integrations/chipyard/generators_vortex/src/main/resources/vsrc'
+[2025-11-08 13:17:41] rm -rf VortexAXIBlackbox.preprocessed.sv preproc
+[2025-11-08 13:17:41] mkdir -p preproc
+[2025-11-08 13:17:41] cat /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_gpu_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/defs_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/cf_math_pkg.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/Vortex.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/Vortex_axi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_socket.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/VX_cluster.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fp_rounding.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fcvt_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_fma.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_fpnew.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_dpi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_ncp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_div.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_sqrt.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fncp_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_dsp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fpu_cvt.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu/VX_fp_classifier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_wrap.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_tags.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_bank.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_mshr.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_bypass.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_cluster.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_bank_flush.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_flush.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache/VX_cache_repl.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_mem_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lmem_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_mem_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_local_mem.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_mem_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_lsu_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_local_mem_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem/VX_gbar_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_decode.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_ipdom_stack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_uuid_gen.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_muldiv.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_int.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_fetch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_csr_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_schedule.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dispatch_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_ibuffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_lsu_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_wctl_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_fpu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_execute.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_core.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dcr_data.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_scoreboard.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_mem_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_gather_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_alu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_split_join.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_operands.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_sfu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_csr_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_pe_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_issue_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_commit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_core_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_mem_unit_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_lsu_unit.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core/VX_dispatch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_arb.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_concat.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_transpose.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_avs_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_pack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_allocator.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_index_queue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_insert.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_elastic_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bits_remove.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_sp_ram.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_edge_trigger.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_divider.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_serial_mul.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_coalescer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_shift_register.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_axi_write_ack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pe_serializer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scope_tap.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_rr_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pending_size.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pipe_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_index_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_mux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_elastic_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_toggle_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_pipe_register.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_lzc.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_skid_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_axi_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_omega.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_bypass_buffer.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_reduce_tree.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scan.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_shift.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_serial_div.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_reset_relay.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_dp_ram.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_priority_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_matrix_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_unpack.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_async_ram_patch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_scope_switch.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_find_first.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_priority_encoder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_cyclic_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_popcount.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_onehot_encoder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_data_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_demux.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_bank_adapter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_generic_arbiter.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_placeholder.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_multiplier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_mem_scheduler.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_stream_xbar.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs/VX_fifo_queue.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_ibuffer_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_scoreboard_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_operands_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_dispatch_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_sched_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_warp_ctl_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_schedule_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_fetch_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_csr_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_commit_sched_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_execute_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_decode_sched_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_branch_ctl_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_dcr_bus_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_writeback_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces/VX_decode_if.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_classifier.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_fma_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_rounding.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_multifmt_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_noncomp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_cast_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_th_64_multi.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_block.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_divsqrt_th_32.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_fma.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_opgroup_fmt_slice.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpnew_top.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/norm_div_sqrt_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/nrbd_nrsc_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/preprocess_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl/div_sqrt_top_mvp.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/lzc.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src/rr_arb_tree.sv /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_frbus.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_src_type.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl/pa_fpu_dp.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl/gated_clk_cell.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_special.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ctrl.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_top.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_ff1.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_pack_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_prepare.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_round_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl/pa_fdsu_srt_single.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_pack.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_scalar_dp.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_prepare.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_bound_table.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ff1.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_round.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_double.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_srt_radix16_with_sqrt.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_ctrl.v /cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl/ct_vfdsu_top.v /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/vortex/src/main/resources/vsrc/VortexAXIBlackbox.sv > preproc/concatenated_preproc.sv
+[2025-11-08 13:17:41] LC_ALL=C /cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/bin/verilator --cc -DNUM_CLUSTERS=4 -DNUM_CORES=2 -DNUM_WARPS=4 -DNUM_THREADS=4 -DSTARTUP_ADDR="32'h80000000"  -DL2_ENABLE -DL3_ENABLE -DPERF_ENABLE -DVIVADO -DSYNTHESIS -DFPU_FPNEW -E -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/fpu -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/cache -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/mem -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/core -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/libs -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/rtl/interfaces -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/hw/dpi -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/fpu_div_sqrt_mvp/hdl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/include/common_cells -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/src -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/src/common_cells/include -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fpu/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/clk/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/opene906/E906_RTL_FACTORY/gen_rtl/fdsu/rtl -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/third_party/cvfpu/vendor/openc910/C910_RTL_FACTORY/gen_rtl/vfdsu/rtl preproc/concatenated_preproc.sv > VortexAXIBlackbox.preprocessed.sv
+[2025-11-08 13:17:42] make[1]: Leaving directory '/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/integrations/chipyard/generators_vortex/src/main/resources/vsrc'
+[2025-11-08 13:17:42] Interrupt map (1 harts 1 interrupts):
+[2025-11-08 13:17:42]   [1, 1] => uart_0
+[2025-11-08 13:17:42] 
+[2025-11-08 13:17:42] <stdin>:103.26-108.5: Warning (simple_bus_reg): /soc/subsystem_l2_clock: missing or empty reg/ranges property
+[2025-11-08 13:17:42] <stdin>:109.28-114.5: Warning (simple_bus_reg): /soc/subsystem_mbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:17:42] <stdin>:115.28-120.5: Warning (simple_bus_reg): /soc/subsystem_pbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:17:42] <stdin>:121.28-126.5: Warning (simple_bus_reg): /soc/subsystem_sbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:17:42] <stdin>:25.29-29.6: Warning (interrupt_provider): /cpus/cpu@0/interrupt-controller: Missing #address-cells in interrupt provider
+[2025-11-08 13:17:42] <stdin>:74.36-83.5: Warning (interrupt_provider): /soc/interrupt-controller@c000000: Missing #address-cells in interrupt provider
+[2025-11-08 13:17:42] Clock subsystem_sbus_0: using diplomatically specified frequency of 1000.0.
+[2025-11-08 13:17:42] Clock subsystem_sbus_1: using diplomatically specified frequency of 1000.0.
+[2025-11-08 13:17:42] Clock subsystem_pbus_0: using diplomatically specified frequency of 1000.0.
+[2025-11-08 13:17:42] Clock subsystem_mbus_0: using diplomatically specified frequency of 1000.0.
+[2025-11-08 13:17:42] /dts-v1/;
+[2025-11-08 13:17:42] 
+[2025-11-08 13:17:42] / {
+[2025-11-08 13:17:42] 	#address-cells = <1>;
+[2025-11-08 13:17:42] 	#size-cells = <1>;
+[2025-11-08 13:17:42] 	compatible = "freechips,rocketchip-unknown-dev";
+[2025-11-08 13:17:42] 	model = "freechips,rocketchip-unknown";
+[2025-11-08 13:17:42] 	L25: aliases {
+[2025-11-08 13:17:42] 		serial0 = &L18;
+[2025-11-08 13:17:42] 	};
+[2025-11-08 13:17:42] 	L24: cpus {
+[2025-11-08 13:17:42] 		#address-cells = <1>;
+[2025-11-08 13:17:42] 		#size-cells = <0>;
+[2025-11-08 13:17:42] 		timebase-frequency = <1000000>;
+[2025-11-08 13:17:42] 		L7: cpu@0 {
+[2025-11-08 13:17:42] 			clock-frequency = <1700000000>;
+[2025-11-08 13:17:42] 			compatible = "ntnu,vortex", "riscv";
+[2025-11-08 13:17:42] 			device_type = "cpu";
+[2025-11-08 13:17:42] 			hardware-exec-breakpoint-count = <0>;
+[2025-11-08 13:17:42] 			next-level-cache = <&L5>;
+[2025-11-08 13:17:42] 			reg = <0x0>;
+[2025-11-08 13:17:42] 			riscv,isa = "rv32emfd";
+[2025-11-08 13:17:42] 			status = "okay";
+[2025-11-08 13:17:42] 			timebase-frequency = <1000000>;
+[2025-11-08 13:17:42] 			L6: interrupt-controller {
+[2025-11-08 13:17:42] 				#interrupt-cells = <1>;
+[2025-11-08 13:17:42] 				compatible = "riscv,cpu-intc";
+[2025-11-08 13:17:42] 				interrupt-controller;
+[2025-11-08 13:17:42] 			};
+[2025-11-08 13:17:42] 		};
+[2025-11-08 13:17:42] 	};
+[2025-11-08 13:17:42] 	L26: htif {
+[2025-11-08 13:17:42] 		compatible = "ucb,htif0";
+[2025-11-08 13:17:42] 	};
+[2025-11-08 13:17:42] 	L12: memory@70000000 {
+[2025-11-08 13:17:42] 		device_type = "memory";
+[2025-11-08 13:17:42] 		reg = <0x70000000 0x80000000>;
+[2025-11-08 13:17:42] 	};
+[2025-11-08 13:17:43] 	L23: soc {
+[2025-11-08 13:17:43] 		#address-cells = <1>;
+[2025-11-08 13:17:43] 		#size-cells = <1>;
+[2025-11-08 13:17:43] 		compatible = "freechips,rocketchip-unknown-soc", "simple-bus";
+[2025-11-08 13:17:43] 		ranges;
+[2025-11-08 13:17:43] 		L15: boot-address-reg@4000 {
+[2025-11-08 13:17:43] 			reg = <0x4000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L5: cache-controller@2010000 {
+[2025-11-08 13:17:43] 			cache-block-size = <64>;
+[2025-11-08 13:17:43] 			cache-level = <2>;
+[2025-11-08 13:17:43] 			cache-sets = <1024>;
+[2025-11-08 13:17:43] 			cache-size = <524288>;
+[2025-11-08 13:17:43] 			cache-unified;
+[2025-11-08 13:17:43] 			compatible = "sifive,inclusivecache0", "cache";
+[2025-11-08 13:17:43] 			next-level-cache = <&L12 &L16 &L17>;
+[2025-11-08 13:17:43] 			reg = <0x2010000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 			sifive,mshr-count = <5>;
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L9: clint@2000000 {
+[2025-11-08 13:17:43] 			compatible = "riscv,clint0";
+[2025-11-08 13:17:43] 			interrupts-extended = <&L6 3 &L6 7>;
+[2025-11-08 13:17:43] 			reg = <0x2000000 0x10000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L19: clock-gater@100000 {
+[2025-11-08 13:17:43] 			reg = <0x100000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L2: error-device@3000 {
+[2025-11-08 13:17:43] 			compatible = "sifive,error0";
+[2025-11-08 13:17:43] 			reg = <0x3000 0x1000>;
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L8: interrupt-controller@c000000 {
+[2025-11-08 13:17:43] 			#interrupt-cells = <1>;
+[2025-11-08 13:17:43] 			compatible = "riscv,plic0";
+[2025-11-08 13:17:43] 			interrupt-controller;
+[2025-11-08 13:17:43] 			interrupts-extended = <&L6 11>;
+[2025-11-08 13:17:43] 			reg = <0xc000000 0x4000000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 			riscv,max-priority = <1>;
+[2025-11-08 13:17:43] 			riscv,ndev = <1>;
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L16: lbwif-ram@10000000 {
+[2025-11-08 13:17:43] 			reg = <0x10000000 0x1000>;
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L17: lbwif-rom@20000 {
+[2025-11-08 13:17:43] 			reg = <0x20000 0x10000>;
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L14: rom@10000 {
+[2025-11-08 13:17:43] 			compatible = "sifive,rom0";
+[2025-11-08 13:17:43] 			reg = <0x10000 0x10000>;
+[2025-11-08 13:17:43] 			reg-names = "mem";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L18: serial@54000000 {
+[2025-11-08 13:17:43] 			clocks = <&L1>;
+[2025-11-08 13:17:43] 			compatible = "sifive,uart0";
+[2025-11-08 13:17:43] 			interrupt-parent = <&L8>;
+[2025-11-08 13:17:43] 			interrupts = <1>;
+[2025-11-08 13:17:43] 			reg = <0x54000000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L4: subsystem_l2_clock {
+[2025-11-08 13:17:43] 			#clock-cells = <0>;
+[2025-11-08 13:17:43] 			clock-frequency = <1000000000>;
+[2025-11-08 13:17:43] 			clock-output-names = "subsystem_l2_clock";
+[2025-11-08 13:17:43] 			compatible = "fixed-clock";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L3: subsystem_mbus_clock {
+[2025-11-08 13:17:43] 			#clock-cells = <0>;
+[2025-11-08 13:17:43] 			clock-frequency = <1000000000>;
+[2025-11-08 13:17:43] 			clock-output-names = "subsystem_mbus_clock";
+[2025-11-08 13:17:43] 			compatible = "fixed-clock";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L1: subsystem_pbus_clock {
+[2025-11-08 13:17:43] 			#clock-cells = <0>;
+[2025-11-08 13:17:43] 			clock-frequency = <1000000000>;
+[2025-11-08 13:17:43] 			clock-output-names = "subsystem_pbus_clock";
+[2025-11-08 13:17:43] 			compatible = "fixed-clock";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L0: subsystem_sbus_clock {
+[2025-11-08 13:17:43] 			#clock-cells = <0>;
+[2025-11-08 13:17:43] 			clock-frequency = <1000000000>;
+[2025-11-08 13:17:43] 			clock-output-names = "subsystem_sbus_clock";
+[2025-11-08 13:17:43] 			compatible = "fixed-clock";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L20: tile-reset-setter@110000 {
+[2025-11-08 13:17:43] 			reg = <0x110000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 		L21: vortex_control_signals@1000 {
+[2025-11-08 13:17:43] 			compatible = "ntnu,vcs";
+[2025-11-08 13:17:43] 			reg = <0x1000 0x1000>;
+[2025-11-08 13:17:43] 			reg-names = "control";
+[2025-11-08 13:17:43] 		};
+[2025-11-08 13:17:43] 	};
+[2025-11-08 13:17:43] };
+[2025-11-08 13:17:43] 
+[2025-11-08 13:17:43] Generated Address Map
+[2025-11-08 13:17:43] 	    1000 -     2000 ARW   vortex_control_signals@1000
+[2025-11-08 13:17:43] 	    3000 -     4000 ARWX  error-device@3000
+[2025-11-08 13:17:43] 	    4000 -     5000 ARW   boot-address-reg@4000
+[2025-11-08 13:17:43] 	   10000 -    20000  R X  rom@10000
+[2025-11-08 13:17:43] 	   20000 -    30000  R XC lbwif-rom@20000
+[2025-11-08 13:17:43] 	  100000 -   101000 ARW   clock-gater@100000
+[2025-11-08 13:17:43] 	  110000 -   111000 ARW   tile-reset-setter@110000
+[2025-11-08 13:17:43] 	 2000000 -  2010000 ARW   clint@2000000
+[2025-11-08 13:17:43] 	 2010000 -  2011000 ARW   cache-controller@2010000
+[2025-11-08 13:17:43] 	 c000000 - 10000000 ARW   interrupt-controller@c000000
+[2025-11-08 13:17:43] 	10000000 - 10001000 ARWXC lbwif-ram@10000000
+[2025-11-08 13:17:43] 	54000000 - 54001000 ARW   serial@54000000
+[2025-11-08 13:17:43] 	70000000 - f0000000 ARWXC memory@70000000
+[2025-11-08 13:17:43] 
+[2025-11-08 13:17:43] 
+[2025-11-08 13:17:43] firesimBuildTopClockGenerator Frequency Summary
+[2025-11-08 13:17:43]   Input Reference Frequency: 1000.0 MHz
+[2025-11-08 13:17:43]   Output clock subsystem_sbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock subsystem_sbus_1, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock subsystem_pbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock subsystem_fbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock subsystem_mbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock subsystem_cbus_0, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock implicit_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43] 
+[2025-11-08 13:17:43] firesimOverallClockBridge Frequency Summary
+[2025-11-08 13:17:43]   Input Reference Frequency: 1000.0 MHz
+[2025-11-08 13:17:43]   Output clock buildtop_reference_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:43]   Output clock implicit_clock, requested: 1000.0 MHz, actual: 1000.0 MHz (division of 1)
+[2025-11-08 13:17:44] [success] Total time: 21 s, completed 8 Nov 2025, 13:17:44
+[2025-11-08 13:17:45] cd /cluster/home/eirikwit/vortex-gpgpu/chipyard && java -jar /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/rocket-chip/sbt-launch.jar  ";project firechip; runMain midas.stage.GoldenGateMain  -i /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.fir -td /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -faf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.anno.json -ggcp firesim.firesim -ggcs BaseF1Config1Mem_F25MHz --output-filename-base FireSim-generated --no-dedup "
+[2025-11-08 13:17:45] Picked up JAVA_TOOL_OPTIONS: -Xmx128G -Xss8M -Djava.io.tmpdir=/cluster/home/eirikwit/vortex-gpgpu/chipyard/.java_tmp
+[2025-11-08 13:17:46] WARNING: A terminally deprecated method in java.lang.System has been called
+[2025-11-08 13:17:46] WARNING: System::setSecurityManager has been called by sbt.TrapExit$ (file:/cluster/home/eirikwit/.sbt/boot/scala-2.12.14/org.scala-sbt/sbt/1.5.5/run_2.12-1.5.5.jar)
+[2025-11-08 13:17:46] WARNING: Please consider reporting this to the maintainers of sbt.TrapExit$
+[2025-11-08 13:17:46] WARNING: System::setSecurityManager will be removed in a future release
+[2025-11-08 13:17:46] [info] welcome to sbt 1.5.5 (N/A Java 17.0.3-internal)
+[2025-11-08 13:17:47] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project/project
+[2025-11-08 13:17:48] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project/project
+[2025-11-08 13:17:48] [info] loading settings for project chipyard-build from plugins.sbt ...
+[2025-11-08 13:17:48] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/project
+[2025-11-08 13:17:48] [info] loading settings for project chipyardRoot from build.sbt ...
+[2025-11-08 13:17:48] [info] loading settings for project hardfloat from build.sbt ...
+[2025-11-08 13:17:48] [info] loading settings for project rocketConfig from build.sbt ...
+[2025-11-08 13:17:48] [info] loading settings for project testchipip from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project constellation from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project icenet from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project hwacha from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project boom from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project cva6 from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project ibex from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project sodor from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project gemmini from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project tapeout from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project vortex from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project sim-build from plugins.sbt ...
+[2025-11-08 13:17:49] [info] loading project definition from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/project
+[2025-11-08 13:17:49] [info] loading settings for project firesim from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project targetutils from build.sbt ...
+[2025-11-08 13:17:49] [info] loading settings for project midas from build.sbt ...
+[2025-11-08 13:17:50] [info] resolving key references (37744 settings) ...
+[2025-11-08 13:17:55] [info] set current project to chipyardRoot (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-11-08 13:17:55] [info] set current project to firechip (in build file:/cluster/home/eirikwit/vortex-gpgpu/chipyard/)
+[2025-11-08 13:18:01] [info] running midas.stage.GoldenGateMain -i /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.fir -td /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -faf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.anno.json -ggcp firesim.firesim -ggcs BaseF1Config1Mem_F25MHz --output-filename-base FireSim-generated --no-dedup
+[2025-11-08 13:18:35] Instantiating bridge peekPokeBridge of type midas.widgets.PeekPokeBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: PeekPokeKey(List(),List(SerializableField(reset,SerializableType(UInt),1)),2)
+[2025-11-08 13:18:35] Instantiating bridge resetBridge of type midas.widgets.ResetPulseBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: ResetPulseBridgeParameters(true,50,1023)
+[2025-11-08 13:18:35] Instantiating bridge ep of type firesim.bridges.SerialBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: SerialBridgeParams(Some(MainMemory_0))
+[2025-11-08 13:18:35] Instantiating bridge ep_1 of type midas.models.FASEDMemoryTimingModel
+[2025-11-08 13:18:35]   With constructor arguments: CompleteConfig(LatencyPipeConfig(BaseParams(16,16,None,None,None,None,256,None,256,None,false,false,false,false,None,true,true,false,List(0, 2, 4, 8),0)),NastiParameters(32,32,4),Some(AXI4EdgeSummary(16,16,Some(1),Some(6),List(AddressSet(0x70000000, 0xfffffff), AddressSet(0x80000000, 0x3fffffff), AddressSet(0xc0000000, 0x1fffffff), AddressSet(0xe0000000, 0xfffffff)))),Some(MainMemory_0))
+[2025-11-08 13:18:35] Instantiating bridge ep_2 of type firesim.bridges.TraceDoctorBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: TraceDoctorKey(2)
+[2025-11-08 13:18:35] Instantiating bridge ep_3 of type firesim.bridges.UARTBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: UARTKey(UARTParams(1409286144,8,2,16,4,3,256,256,false,false,false,3686400),271)
+[2025-11-08 13:18:35] Instantiating bridge clockBridge of type midas.widgets.ClockBridgeModule
+[2025-11-08 13:18:35]   With constructor arguments: ClockParameters(List(RationalClock(buildtop_reference_clock,1,1)))
+[2025-11-08 13:18:36] Generating a Midas Memory Model
+[2025-11-08 13:18:36]   Max Read Requests: 6
+[2025-11-08 13:18:36]   Max Write Requests: 6
+[2025-11-08 13:18:36]   Max Read Length: 16
+[2025-11-08 13:18:36]   Max Write Length: 16
+[2025-11-08 13:18:36]   Max Read ID Reuse: 1
+[2025-11-08 13:18:36]   Max Write ID Reuse: 1
+[2025-11-08 13:18:36] 
+[2025-11-08 13:18:36] Timing Model Parameters
+[2025-11-08 13:18:36]   Timing Model Class: Latency Bandwidth Pipe
+[2025-11-08 13:18:37]   No LLC Model Instantiated
+[2025-11-08 13:18:37] 
+[2025-11-08 13:18:37] TraceDoctorBridgeModule
+[2025-11-08 13:18:37]     traceWidth      2
+[2025-11-08 13:18:37]     dmaTokenWidth   512
+[2025-11-08 13:18:37]     requiredTokens  {
+[2025-11-08 13:18:37]         0 -> traceBits(511, 0)
+[2025-11-08 13:18:37]     }
+[2025-11-08 13:18:37] 
+[2025-11-08 13:18:37] Bridge Streams To CPU:
+[2025-11-08 13:18:37]   TRACEDOCTORBRIDGEMODULE_0_to_cpu_stream, FPGA Buffer Depth: 6144 Beats
+[2025-11-08 13:18:37] Bridge Streams From CPU:
+[2025-11-08 13:18:37]   None
+[2025-11-08 13:18:37] Simulator Memory Map:
+[2025-11-08 13:18:37]   [   0,   7f]: FASEDMemoryTimingModel_0
+[2025-11-08 13:18:37]   [  80,   bf]: SerialBridgeModule_0
+[2025-11-08 13:18:37]   [  c0,   ff]: LoadMemWidget_0
+[2025-11-08 13:18:37]   [ 100,  11f]: PeekPokeBridgeModule_0
+[2025-11-08 13:18:37]   [ 120,  13f]: UARTBridgeModule_0
+[2025-11-08 13:18:37]   [ 140,  15f]: ClockBridgeModule_0
+[2025-11-08 13:18:37]   [ 160,  16f]: SimulationMaster_0
+[2025-11-08 13:18:37]   [ 170,  17f]: TraceDoctorBridgeModule_0
+[2025-11-08 13:18:37]   [ 180,  187]: ResetPulseBridgeModule_0
+[2025-11-08 13:18:37]   [ 188,  18b]: CPUManagedStreamEngine_0
+[2025-11-08 13:18:37] Total Host-FPGA DRAM Allocated: 2.000 GiB of 16.000 GiB available.
+[2025-11-08 13:18:37] Host-FPGA DRAM Allocation Map:
+[2025-11-08 13:18:37]   MainMemory_0 -> [0x0, 0x7FFFFFFF]
+[2025-11-08 13:18:37]     Associated bridges: FASEDMemoryTimingModel_0
+[2025-11-08 13:18:46] Auto ILA: p(EnableAutoILA) unset. Skipping AutoILATransform
+[2025-11-08 13:18:59] [success] Total time: 64 s (01:04), completed 8 Nov 2025, 13:18:59
+[2025-11-08 13:19:00] grep -sh ^ /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firrtl_black_box_resource_files.f | \
+[2025-11-08 13:19:00] xargs cat >> /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/FireSim-generated.sv # Append blackboxes to FPGA wrapper, if any
+[2025-11-08 13:19:00] rm -rf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/dromajo_params.h
+[2025-11-08 13:19:00] ln -s /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dromajo_params.h /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/dromajo_params.h
+[2025-11-08 13:19:00] rm -rf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.rom
+[2025-11-08 13:19:00] ln -s /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/bootrom/bootrom.rv64.img /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.rom
+[2025-11-08 13:19:00] dtc -I dts -O dtb -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dtb /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:103.26-108.5: Warning (simple_bus_reg): /soc/subsystem_l2_clock: missing or empty reg/ranges property
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:109.28-114.5: Warning (simple_bus_reg): /soc/subsystem_mbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:115.28-120.5: Warning (simple_bus_reg): /soc/subsystem_pbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:121.28-126.5: Warning (simple_bus_reg): /soc/subsystem_sbus_clock: missing or empty reg/ranges property
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:25.29-29.6: Warning (interrupt_provider): /cpus/cpu@0/interrupt-controller: Missing #address-cells in interrupt provider
+[2025-11-08 13:19:00] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/firesim.firesim.FireSim.FireSimV2S4C.dts:74.36-83.5: Warning (interrupt_provider): /soc/interrupt-controller@c000000: Missing #address-cells in interrupt provider
+[2025-11-08 13:19:00] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build
+[2025-11-08 13:19:00] cp /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/FireSim-generated.const.h /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/
+[2025-11-08 13:19:00] cp -f /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/FireSim-generated.runtime.conf /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/runtime.conf
+[2025-11-08 13:19:00] make -C /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc alveo PLATFORM=alveo DRIVER_NAME=FireSim GEN_FILE_BASENAME=FireSim-generated \
+[2025-11-08 13:19:00] GEN_DIR=/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build OUT_DIR=/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz DRIVER="/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_top.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/systematic_scheduler.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_alveo.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/blockdev.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/dromajo.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/groundtest.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/serial.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/simplenic.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_example.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_tea.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_worker.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/uart.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/fesvr/firesim_tsi.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_dwarf.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_elf.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_processing.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/trace_tracker.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/lib/libfesvr.a /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc" \
+[2025-11-08 13:19:00] TOP_DIR=/cluster/home/eirikwit/vortex-gpgpu/chipyard
+[2025-11-08 13:19:00] make[1]: Entering directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc'
+[2025-11-08 13:19:00] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/
+[2025-11-08 13:19:00] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/simif.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:01] In file included from /cluster/apps/eb/software/GCCcore/13.2.0/include/c++/13.2.0/cassert:44,
+[2025-11-08 13:19:01]                  from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif.h:6,
+[2025-11-08 13:19:01]                  from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif.cc:3:
+[2025-11-08 13:19:01] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif.cc: In member function ‘void simif_t::print_simulation_performance_summary()’:
+[2025-11-08 13:19:01] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif.cc:159:23: warning: comparison of integer expressions of different signedness: ‘uint64_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:01]   159 |   assert(start_hcycle != -1);
+[2025-11-08 13:19:01]       |          ~~~~~~~~~~~~~^~~~~
+[2025-11-08 13:19:01] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/
+[2025-11-08 13:19:01] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/simif_alveo.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc: In constructor ‘simif_alveo_t::simif_alveo_t(int, char**)’:
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc:59:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const uint32_t’ {aka ‘const unsigned int’} [-Wsign-compare]
+[2025-11-08 13:19:02]    59 |   for (int i = 0; i < CPUMANAGEDSTREAMENGINE_0_from_cpu_stream_count; i++) {
+[2025-11-08 13:19:02]       |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc:74:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const uint32_t’ {aka ‘const unsigned int’} [-Wsign-compare]
+[2025-11-08 13:19:02]    74 |   for (int i = 0; i < CPUMANAGEDSTREAMENGINE_0_to_cpu_stream_count; i++) {
+[2025-11-08 13:19:02]       |                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2025-11-08 13:19:02] In file included from /cluster/apps/eb/software/GCCcore/13.2.0/include/c++/13.2.0/cassert:44,
+[2025-11-08 13:19:02]                  from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc:2:
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc: In member function ‘void* simif_alveo_t::fpga_pci_bar_get_mem_at_offset(uint64_t)’:
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc:211:39: warning: comparison of integer expressions of different signedness: ‘uint64_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:02]   211 |     assert(!(((uint64_t)(offset + 4)) > bar0_size));
+[2025-11-08 13:19:02]       |              ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[2025-11-08 13:19:02] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/simif_alveo.cc:212:22: warning: pointer of type ‘void *’ used in arithmetic [-Wpointer-arith]
+[2025-11-08 13:19:02]   212 |     return bar0_base + offset;
+[2025-11-08 13:19:02]       |            ~~~~~~~~~~^~~~~~~~
+[2025-11-08 13:19:03] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/address_map.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/address_map.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:03] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/autocounter.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/autocounter.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:03] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/cpu_managed_stream.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:04] In file included from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc:3:
+[2025-11-08 13:19:04] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc: In member function ‘size_t StreamFromCPU::push(void*, size_t, size_t)’:
+[2025-11-08 13:19:04] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc:27:26: warning: comparison of integer expressions of different signedness: ‘long unsigned int’ and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:04]    27 |   assert(threshold_beats <= this->fpga_buffer_size());
+[2025-11-08 13:19:04]       |          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2025-11-08 13:19:04] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc: In member function ‘size_t StreamToCPU::pull(void*, size_t, size_t)’:
+[2025-11-08 13:19:04] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/cpu_managed_stream.cc:72:26: warning: comparison of integer expressions of different signedness: ‘long unsigned int’ and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:04]    72 |   assert(threshold_beats <= this->fpga_buffer_size());
+[2025-11-08 13:19:04]       |          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2025-11-08 13:19:04] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/fased_memory_timing_model.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/fased_memory_timing_model.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:07] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/heartbeat.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/heartbeat.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:08] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/reset_pulse.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/reset_pulse.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:09] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/synthesized_assertions.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/synthesized_assertions.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:09] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/synthesized_prints.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/synthesized_prints.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:09] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -c -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/termination.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc/bridges/termination.cc -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h
+[2025-11-08 13:19:09] mkdir -p /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz
+[2025-11-08 13:19:09] g++  -D__STDC_FORMAT_MACROS -g -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/include -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/generated-src/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz -Wno-unused-variable -O2 -I/cluster/home/eirikwit/vortex-gpgpu/vortex-ntnu/runtime/chipyard -Wall -I/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc -std=c++17 -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h -include /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h \
+[2025-11-08 13:19:09] -o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/FireSim-alveo /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_top.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/systematic_scheduler.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_alveo.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/blockdev.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/dromajo.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/groundtest.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/serial.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/simplenic.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_example.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_tea.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_worker.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/uart.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/fesvr/firesim_tsi.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_dwarf.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_elf.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/tracerv_processing.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracerv/trace_tracker.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/lib/libfesvr.a /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/simif.o /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/simif_alveo.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/address_map.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/autocounter.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/cpu_managed_stream.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/fased_memory_timing_model.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/heartbeat.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/reset_pulse.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/synthesized_assertions.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/synthesized_prints.o  /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/termination.o  -L/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/riscv-tools/lib -L/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/lib -L/cluster/home/eirikwit/vortex-gpgpu/chipyard/.conda-env/lib -l:libdwarf.so -l:libelf.so -lz -ldromajo_cosim -lrt -Wl,-rpath='$ORIGIN' -L/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build -lstdc++ -lpthread -lgmp
+[2025-11-08 13:19:10] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_top.cc: In constructor ‘firesim_top_t::firesim_top_t(int, char**)’:
+[2025-11-08 13:19:10] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/src/main/cc/firesim/firesim_top.cc:660:26: warning: comparison of integer expressions of different signedness: ‘uint64_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:10]   660 |     if (profile_interval != -1) {
+[2025-11-08 13:19:10]       |         ~~~~~~~~~~~~~~~~~^~~~~
+[2025-11-08 13:19:19] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc: In member function ‘void tracedoctor_shadow::dump_failing_token(const char*, int, const traceStatsToken&, const traceStatsSample&)’:
+[2025-11-08 13:19:19] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc:122:23: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘const uint16_t*’ {aka ‘const short unsigned int*’} [-Wformat=]
+[2025-11-08 13:19:19]   122 |   fprintf(failing, "%lu %u %u %u %u%u%u %u %u%u%u %u%u%u\n",
+[2025-11-08 13:19:19]       |                     ~~^
+[2025-11-08 13:19:19]       |                       |
+[2025-11-08 13:19:19]       |                       long unsigned int
+[2025-11-08 13:19:19]       |                     %hn
+[2025-11-08 13:19:19]   123 |     token.branchLatency,
+[2025-11-08 13:19:19]       |     ~~~~~~~~~~~~~~~~~~~
+[2025-11-08 13:19:19]       |           |
+[2025-11-08 13:19:19]       |           const uint16_t* {aka const short unsigned int*}
+[2025-11-08 13:19:19] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc:145:22: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 3 has type ‘const bool*’ [-Wformat=]
+[2025-11-08 13:19:19]   145 |   fprintf(failing, "%u %u%u%u%u %u%u%u%u %u %u%u%u %u%u%u %u%u%u\n",
+[2025-11-08 13:19:19]       |                     ~^
+[2025-11-08 13:19:19]       |                      |
+[2025-11-08 13:19:19]       |                      unsigned int
+[2025-11-08 13:19:19]   146 |     sample.isCommit,
+[2025-11-08 13:19:19]       |     ~~~~~~~~~~~~~~~   
+[2025-11-08 13:19:19]       |            |
+[2025-11-08 13:19:19]       |            const bool*
+[2025-11-08 13:19:19] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc: In member function ‘void tracedoctor_shadow::addStats(traceStatsSummary&, traceStatsSample&)’:
+[2025-11-08 13:19:19] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/tracedoctor_shadow.cc:369:34: warning: comparison of integer expressions of different signedness: ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+[2025-11-08 13:19:19]   369 |       if (instLatencyHist.size() <= value) {
+[2025-11-08 13:19:19]       |           ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+[2025-11-08 13:19:23] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/bridges/uart.cc:10: warning: "_XOPEN_SOURCE" redefined
+[2025-11-08 13:19:23]    10 | #define _XOPEN_SOURCE
+[2025-11-08 13:19:23]       | 
+[2025-11-08 13:19:23] In file included from /usr/include/bits/libc-header-start.h:33,
+[2025-11-08 13:19:23]                  from /usr/include/stdint.h:26,
+[2025-11-08 13:19:23]                  from /cluster/apps/eb/software/GCCcore/13.2.0/lib/gcc/x86_64-pc-linux-gnu/13.2.0/include/stdint.h:9,
+[2025-11-08 13:19:23]                  from /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/output/alveo/FireSim-FireSimV2S4C-BaseF1Config1Mem_F25MHz/build/FireSim-generated.const.h:6,
+[2025-11-08 13:19:23]                  from <command-line>:
+[2025-11-08 13:19:23] /usr/include/features.h:214: note: this is the location of the previous definition
+[2025-11-08 13:19:23]   214 | # define _XOPEN_SOURCE  700
+[2025-11-08 13:19:23]       | 
+[2025-11-08 13:19:25] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/fesvr/firesim_tsi.cc: In constructor ‘firesim_tsi_t::firesim_tsi_t(int, char**, bool)’:
+[2025-11-08 13:19:25] /cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/firesim-lib/src/main/cc/fesvr/firesim_tsi.cc:5:34: warning: ‘*this.firesim_tsi_t::<anonymous>.testchip_tsi_t::has_loadmem’ is used uninitialized [-Wuninitialized]
+[2025-11-08 13:19:25]     5 |     : testchip_tsi_t(argc, argv, has_loadmem), is_busy(false) {
+[2025-11-08 13:19:25]       |                                  ^~~~~~~~~~~
+[2025-11-08 13:19:30] /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc: In constructor ‘testchip_tsi_t::testchip_tsi_t(int, char**, bool)’:
+[2025-11-08 13:19:30] /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc:38:15: warning: catching polymorphic type ‘class std::exception’ by value [-Wcatch-value=]
+[2025-11-08 13:19:30]    38 |   catch (std::exception){
+[2025-11-08 13:19:30]       |               ^~~~~~~~~
+[2025-11-08 13:19:30] /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc: In member function ‘void testchip_tsi_t::parse_command()’:
+[2025-11-08 13:19:30] /cluster/home/eirikwit/vortex-gpgpu/chipyard/generators/testchipip/src/main/resources/testchipip/csrc/testchip_tsi.cc:54:10: warning: enumeration value ‘NONE’ not handled in switch [-Wswitch]
+[2025-11-08 13:19:30]    54 |   switch (smo->command)
+[2025-11-08 13:19:30]       |          ^
+[2025-11-08 13:19:31] make[1]: Leaving directory '/cluster/home/eirikwit/vortex-gpgpu/chipyard/sims/firesim/sim/midas/src/main/cc'
